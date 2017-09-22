@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Shoptivity {
+public class Shoptivity {
     
     var name: String
     var description: String = ""
