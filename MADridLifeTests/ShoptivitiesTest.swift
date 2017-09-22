@@ -20,6 +20,6 @@ class ShoptivitiesTest: XCTestCase {
     func testShoptivitiesList(){
         let sut = Shoptivities()
         sut.add(shoptivity: Shoptivity(name: "Shoptivity"))
-        XCTAssertEqual(1, sut.count())
+        XCTAssertEqual(1, sut.count()) 
     }
 }
