@@ -56,6 +56,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B8613FB1F74F39E00C497D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5BE7AB441F73D2EB0018CF7D /* LaunchScreen.storyboard */,
+				5BE7AB3F1F73D2EB0018CF7D /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B8613FC1F74F3B300C497D2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BE7AB3D1F73D2EB0018CF7D /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		5BE7AB2F1F73D2EB0018CF7D = {
 			isa = PBXGroup;
 			children = (
@@ -78,10 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				5BE7AB3B1F73D2EB0018CF7D /* AppDelegate.swift */,
-				5BE7AB3D1F73D2EB0018CF7D /* ViewController.swift */,
-				5BE7AB3F1F73D2EB0018CF7D /* Main.storyboard */,
+				5B8613FC1F74F3B300C497D2 /* Controllers */,
+				5B8613FB1F74F39E00C497D2 /* Views */,
 				5BE7AB421F73D2EB0018CF7D /* Assets.xcassets */,
-				5BE7AB441F73D2EB0018CF7D /* LaunchScreen.storyboard */,
 				5BE7AB471F73D2EB0018CF7D /* Info.plist */,
 			);
 			path = MADridLife;
