@@ -22,7 +22,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Shops"/>
                                 <connections>
-                                    <segue destination="vIH-OJ-FYS" kind="show" id="vof-pW-Gg4"/>
+                                    <segue destination="vIH-OJ-FYS" kind="show" id="VeK-0c-gfR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQH-lo-xg7">
