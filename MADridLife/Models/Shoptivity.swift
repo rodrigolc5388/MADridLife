@@ -11,12 +11,14 @@ import Foundation
 public class Shoptivity {
     
     var name: String
-    var description: String = ""
+    var description_en: String = ""
+    var description_es: String = ""
     var latitude: Float? = nil
     var longitude: Float? = nil
     var image: String = ""
     var logo: String = ""
-    var openingHours: String = ""
+    var openingHours_en: String = ""
+    var openingHours_es: String = ""
     var address: String = ""
     
     init(name: String){
