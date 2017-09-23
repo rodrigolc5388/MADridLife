@@ -66,7 +66,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zYq-8m-thy">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zYq-8m-thy" userLabel="Activity Cell" customClass="ActivityCell" customModule="MADridLife" customModuleProvider="target">
                                         <rect key="frame" x="3" y="0.0" width="369" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -87,6 +87,8 @@
                                             </subviews>
                                         </view>
                                         <connections>
+                                            <outlet property="imageView" destination="adf-Sm-iyW" id="Qo0-tw-3Wd"/>
+                                            <outlet property="label" destination="cY6-8F-ntm" id="VPz-ZA-f3n"/>
                                             <segue destination="QNq-o9-H6L" kind="show" identifier="ActivityDetailSegue" id="A6b-f6-hfu"/>
                                         </connections>
                                     </collectionViewCell>
@@ -221,7 +223,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1H7-It-cQI">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1H7-It-cQI" customClass="ShopCell" customModule="MADridLife" customModuleProvider="target">
                                         <rect key="frame" x="3" y="0.0" width="369" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -242,6 +244,8 @@
                                             </subviews>
                                         </view>
                                         <connections>
+                                            <outlet property="imageView" destination="Rx5-ET-u6I" id="ZaD-sg-fsx"/>
+                                            <outlet property="label" destination="hBM-da-jEb" id="OSL-PA-Xyk"/>
                                             <segue destination="a89-q6-scX" kind="show" identifier="ShopDetailSegue" id="9Zf-t5-K8z"/>
                                         </connections>
                                     </collectionViewCell>
