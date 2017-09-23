@@ -22,4 +22,9 @@ class ShoptivitiesTest: XCTestCase {
         sut.add(shoptivity: Shoptivity(name: "Shoptivity"))
         XCTAssertEqual(1, sut.count()) 
     }
+    
+    func testDownloadShoptivitiesInteractorImpl(){
+        let dataTest = DonwloadShoptivitiesInteractorImpl()
+        XCTAssertNotNil(dataTest)
+    }
 }

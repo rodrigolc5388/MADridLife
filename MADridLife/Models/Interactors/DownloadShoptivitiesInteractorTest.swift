@@ -8,9 +8,9 @@
 
 import Foundation
 
-class DownloadShoptivitiesInteractorTest: DownloadShoptivitiesInteractor {
+/*class DownloadShoptivitiesInteractorTest: DownloadShoptivitiesInteractor {
     
-    func execute(onSuccess: @escaping (Shoptivities) -> Void, onError: ((Error) -> Void)?) {
+    func execute(onSuccess: @escaping (Shoptivities, Shoptivities?) -> Void, onError: ((Error) -> Void)?) {
         
         let shoptivities = Shoptivities()
         for i in 0...10{
@@ -28,4 +28,4 @@ class DownloadShoptivitiesInteractorTest: DownloadShoptivitiesInteractor {
     }
     
     
-}
+}*/

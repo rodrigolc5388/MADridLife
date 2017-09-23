@@ -9,6 +9,6 @@
 import Foundation
 
 protocol DownloadShoptivitiesInteractor {
-    func execute(onSuccess: @escaping (Shoptivities) -> Void, onError: ((Error) -> Void)?)
-    func execute(onSuccess: @escaping (Shoptivities) -> Void)
+    func execute(onSuccess: @escaping (Shoptivities, Shoptivities) -> Void, onError: ((Error) -> Void)?)
+    func execute(onSuccess: @escaping (Shoptivities, Shoptivities) -> Void)
 }

@@ -20,6 +20,8 @@
 		5B967CCD1F76D59F005FE0A2 /* ExtensionViewC+CollectionViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B967CCC1F76D59F005FE0A2 /* ExtensionViewC+CollectionViewC.swift */; };
 		5B967CCF1F76D69D005FE0A2 /* ShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B967CCE1F76D69D005FE0A2 /* ShopCell.swift */; };
 		5B967CD11F76D8F1005FE0A2 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B967CD01F76D8F1005FE0A2 /* ActivityCell.swift */; };
+		5B967CD31F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B967CD21F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift */; };
+		5B967CD61F76E2E9005FE0A2 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B967CD51F76E2E9005FE0A2 /* JSONParser.swift */; };
 		5BE7AB3C1F73D2EB0018CF7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7AB3B1F73D2EB0018CF7D /* AppDelegate.swift */; };
 		5BE7AB411F73D2EB0018CF7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7AB3F1F73D2EB0018CF7D /* Main.storyboard */; };
 		5BE7AB431F73D2EB0018CF7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7AB421F73D2EB0018CF7D /* Assets.xcassets */; };
@@ -51,6 +53,8 @@
 		5B967CCC1F76D59F005FE0A2 /* ExtensionViewC+CollectionViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExtensionViewC+CollectionViewC.swift"; sourceTree = "<group>"; };
 		5B967CCE1F76D69D005FE0A2 /* ShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCell.swift; sourceTree = "<group>"; };
 		5B967CD01F76D8F1005FE0A2 /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		5B967CD21F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonwloadShoptivitiesInteractorImpl.swift; sourceTree = "<group>"; };
+		5B967CD51F76E2E9005FE0A2 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		5BE7AB381F73D2EB0018CF7D /* MADridLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MADridLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE7AB3B1F73D2EB0018CF7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BE7AB401F73D2EB0018CF7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,8 +123,17 @@
 			children = (
 				5B8614071F76BDB700C497D2 /* DownloadShoptivitiesInteractor.swift */,
 				5B8614091F76BFC100C497D2 /* DownloadShoptivitiesInteractorTest.swift */,
+				5B967CD21F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift */,
 			);
 			path = Interactors;
+			sourceTree = "<group>";
+		};
+		5B967CD41F76E2D8005FE0A2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				5B967CD51F76E2E9005FE0A2 /* JSONParser.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		5BE7AB2F1F73D2EB0018CF7D = {
@@ -145,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				5BE7AB3B1F73D2EB0018CF7D /* AppDelegate.swift */,
+				5B967CD41F76E2D8005FE0A2 /* Util */,
 				5B8613FD1F75120F00C497D2 /* Models */,
 				5B8613FC1F74F3B300C497D2 /* Controllers */,
 				5B8613FB1F74F39E00C497D2 /* Views */,
@@ -272,11 +286,13 @@
 				5B86140A1F76BFC100C497D2 /* DownloadShoptivitiesInteractorTest.swift in Sources */,
 				5B86141A1F76CD2B00C497D2 /* ShopDetailViewController.swift in Sources */,
 				5B8614031F75140B00C497D2 /* Shoptivities.swift in Sources */,
+				5B967CD31F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift in Sources */,
 				5B8614141F76CCD800C497D2 /* MainViewController.swift in Sources */,
 				5B8614161F76CCDF00C497D2 /* ShopsViewController.swift in Sources */,
 				5B967CD11F76D8F1005FE0A2 /* ActivityCell.swift in Sources */,
 				5B967CCF1F76D69D005FE0A2 /* ShopCell.swift in Sources */,
 				5B8614181F76CCE700C497D2 /* ActivitiesViewController.swift in Sources */,
+				5B967CD61F76E2E9005FE0A2 /* JSONParser.swift in Sources */,
 				5B8614011F75130800C497D2 /* Shoptivity.swift in Sources */,
 				5B967CCD1F76D59F005FE0A2 /* ExtensionViewC+CollectionViewC.swift in Sources */,
 				5BE7AB3C1F73D2EB0018CF7D /* AppDelegate.swift in Sources */,
