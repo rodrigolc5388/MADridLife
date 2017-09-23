@@ -12,7 +12,7 @@
         <!--MADridLife-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MADridLife" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="MADridLife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Shops"/>
                                 <connections>
-                                    <segue destination="vIH-OJ-FYS" kind="show" id="VeK-0c-gfR"/>
+                                    <segue destination="vIH-OJ-FYS" kind="show" identifier="ShowShopsSegue" id="VeK-0c-gfR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQH-lo-xg7">
@@ -30,7 +30,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Activities"/>
                                 <connections>
-                                    <segue destination="OZy-Dq-nFF" kind="show" id="2S2-xW-AaF"/>
+                                    <segue destination="OZy-Dq-nFF" kind="show" identifier="ShowActivitiesSegue" id="2S2-xW-AaF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -46,7 +46,7 @@
         <!--Activities-->
         <scene sceneID="7IU-o9-NcT">
             <objects>
-                <viewController title="Activities" id="OZy-Dq-nFF" sceneMemberID="viewController">
+                <viewController title="Activities" id="OZy-Dq-nFF" customClass="ActivitiesViewController" customModule="MADridLife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bBr-oH-MnH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,7 +55,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="272"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WHo-s3-fRp">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WHo-s3-fRp" userLabel="ActivitiesCV">
                                 <rect key="frame" x="0.0" y="344" width="375" height="323"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -87,7 +87,7 @@
                                             </subviews>
                                         </view>
                                         <connections>
-                                            <segue destination="QNq-o9-H6L" kind="show" id="A6b-f6-hfu"/>
+                                            <segue destination="QNq-o9-H6L" kind="show" identifier="ActivityDetailSegue" id="A6b-f6-hfu"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -96,6 +96,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="ehG-yz-cDV"/>
                     </view>
+                    <connections>
+                        <outlet property="activitiesCV" destination="WHo-s3-fRp" id="tmD-LA-2Bh"/>
+                        <outlet property="mapView" destination="GJM-4A-vcu" id="lBR-KB-qur"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3X8-Dn-mFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -104,7 +108,7 @@
         <!--ActivityDetailView-->
         <scene sceneID="32u-Xy-Tsu">
             <objects>
-                <viewController title="ActivityDetailView" id="QNq-o9-H6L" sceneMemberID="viewController">
+                <viewController title="ActivityDetailView" id="QNq-o9-H6L" customClass="ActivityDetailViewController" customModule="MADridLife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BQR-h8-bmH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,14 +124,14 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.3425817438" green="0.33225279569999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvD-UH-3fh">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvD-UH-3fh" userLabel="activityNameLabel">
                                                 <rect key="frame" x="119" y="238" width="137" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gEi-lU-Lus">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gEi-lU-Lus" userLabel="descriptionView">
                                                 <rect key="frame" x="4" y="296" width="367" height="168"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.19482608900000001" green="1" blue="0.19783663700000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -139,7 +143,7 @@
                                                 <rect key="frame" x="8" y="637" width="359" height="227"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </mapView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6Q-Zn-esa">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6Q-Zn-esa" userLabel="openingHoursLabel">
                                                 <rect key="frame" x="115" y="472" width="137" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="1" green="0.1568254375" blue="0.85023284700000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -147,7 +151,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kr5-fZ-b7Q">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kr5-fZ-b7Q" userLabel="addressLabel">
                                                 <rect key="frame" x="115" y="548" width="137" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="1" green="0.1996766767" blue="0.24100093759999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -181,6 +185,14 @@
                         <viewLayoutGuide key="safeArea" id="txk-xQ-uJo"/>
                     </view>
                     <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="activityMapView" destination="xVl-Yr-LcQ" id="Kbo-hn-D3C"/>
+                        <outlet property="activityNameLabel" destination="vvD-UH-3fh" id="HKH-cF-KtV"/>
+                        <outlet property="addressLabel" destination="kr5-fZ-b7Q" id="1eY-uf-92w"/>
+                        <outlet property="descriptionView" destination="gEi-lU-Lus" id="U54-ue-unp"/>
+                        <outlet property="imageView" destination="dov-rV-Xn7" id="tnp-PP-oAA"/>
+                        <outlet property="openingHoursLabel" destination="t6Q-Zn-esa" id="hgO-4r-S73"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGO-nD-ZQK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,7 +201,7 @@
         <!--Shops-->
         <scene sceneID="h6k-fi-j49">
             <objects>
-                <viewController title="Shops" id="vIH-OJ-FYS" sceneMemberID="viewController">
+                <viewController title="Shops" id="vIH-OJ-FYS" customClass="ShopsViewController" customModule="MADridLife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uyr-9b-tPE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -198,7 +210,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="272"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ae6-Vh-lrb">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ae6-Vh-lrb" userLabel="ShopsCV">
                                 <rect key="frame" x="0.0" y="344" width="375" height="323"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -230,7 +242,7 @@
                                             </subviews>
                                         </view>
                                         <connections>
-                                            <segue destination="a89-q6-scX" kind="show" id="9Zf-t5-K8z"/>
+                                            <segue destination="a89-q6-scX" kind="show" identifier="ShopDetailSegue" id="9Zf-t5-K8z"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -239,6 +251,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="qaI-k6-Oyg"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="IfD-Pp-kWn" id="oJb-uM-Gk2"/>
+                        <outlet property="shopsCV" destination="ae6-Vh-lrb" id="RVa-Ry-TtP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NGf-dS-Tll" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -247,7 +263,7 @@
         <!--ShopDetailView-->
         <scene sceneID="DUV-6T-FgV">
             <objects>
-                <viewController title="ShopDetailView" id="a89-q6-scX" sceneMemberID="viewController">
+                <viewController title="ShopDetailView" id="a89-q6-scX" customClass="ShopDetailViewController" customModule="MADridLife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q9K-q6-8cd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -262,14 +278,7 @@
                                                 <rect key="frame" x="8" y="675" width="359" height="227"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </mapView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ox2-aQ-egg">
-                                                <rect key="frame" x="119" y="260" width="137" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0H-jt-PaQ">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0H-jt-PaQ" userLabel="openingHoursLabel">
                                                 <rect key="frame" x="115" y="510" width="137" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="1" green="0.15682543746216293" blue="0.85023284700222845" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -277,7 +286,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kE9-LW-fk9">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kE9-LW-fk9" userLabel="addressLabel">
                                                 <rect key="frame" x="115" y="586" width="137" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="1" green="0.19967667665211497" blue="0.24100093757926833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -290,7 +299,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.3425817438454255" green="0.33225279572549771" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="14o-tI-vjo">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="14o-tI-vjo" userLabel="descriptionView">
                                                 <rect key="frame" x="4" y="318" width="367" height="168"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.19482608895884923" green="1" blue="0.19783663701540533" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -298,6 +307,13 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ox2-aQ-egg" userLabel="shopNameLabel">
+                                                <rect key="frame" x="119" y="260" width="137" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -324,6 +340,14 @@
                         <viewLayoutGuide key="safeArea" id="Ug0-FT-gyk"/>
                     </view>
                     <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="kE9-LW-fk9" id="SpY-Od-BHh"/>
+                        <outlet property="descriptionView" destination="14o-tI-vjo" id="Ykl-kd-X3n"/>
+                        <outlet property="imageView" destination="pZY-tY-OiT" id="xiM-cn-1Kh"/>
+                        <outlet property="openingHoursLabel" destination="p0H-jt-PaQ" id="ymp-hq-QPr"/>
+                        <outlet property="shopMapView" destination="0nH-84-j6g" id="eWe-LZ-Dh7"/>
+                        <outlet property="shopNameLabel" destination="Ox2-aQ-egg" id="Vrq-2u-RSD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJT-gC-LPp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

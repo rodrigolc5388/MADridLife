@@ -12,8 +12,12 @@
 		5B8614051F7520D400C497D2 /* ShoptivitiesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8614041F7520D400C497D2 /* ShoptivitiesTest.swift */; };
 		5B8614081F76BDB700C497D2 /* DownloadShoptivitiesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8614071F76BDB700C497D2 /* DownloadShoptivitiesInteractor.swift */; };
 		5B86140A1F76BFC100C497D2 /* DownloadShoptivitiesInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8614091F76BFC100C497D2 /* DownloadShoptivitiesInteractorTest.swift */; };
+		5B8614141F76CCD800C497D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8614131F76CCD800C497D2 /* MainViewController.swift */; };
+		5B8614161F76CCDF00C497D2 /* ShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8614151F76CCDF00C497D2 /* ShopsViewController.swift */; };
+		5B8614181F76CCE700C497D2 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8614171F76CCE700C497D2 /* ActivitiesViewController.swift */; };
+		5B86141A1F76CD2B00C497D2 /* ShopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8614191F76CD2B00C497D2 /* ShopDetailViewController.swift */; };
+		5B86141E1F76CDAC00C497D2 /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86141D1F76CDAC00C497D2 /* ActivityDetailViewController.swift */; };
 		5BE7AB3C1F73D2EB0018CF7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7AB3B1F73D2EB0018CF7D /* AppDelegate.swift */; };
-		5BE7AB3E1F73D2EB0018CF7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7AB3D1F73D2EB0018CF7D /* ViewController.swift */; };
 		5BE7AB411F73D2EB0018CF7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7AB3F1F73D2EB0018CF7D /* Main.storyboard */; };
 		5BE7AB431F73D2EB0018CF7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7AB421F73D2EB0018CF7D /* Assets.xcassets */; };
 		5BE7AB461F73D2EB0018CF7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7AB441F73D2EB0018CF7D /* LaunchScreen.storyboard */; };
@@ -36,9 +40,13 @@
 		5B8614041F7520D400C497D2 /* ShoptivitiesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoptivitiesTest.swift; sourceTree = "<group>"; };
 		5B8614071F76BDB700C497D2 /* DownloadShoptivitiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadShoptivitiesInteractor.swift; sourceTree = "<group>"; };
 		5B8614091F76BFC100C497D2 /* DownloadShoptivitiesInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadShoptivitiesInteractorTest.swift; sourceTree = "<group>"; };
+		5B8614131F76CCD800C497D2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5B8614151F76CCDF00C497D2 /* ShopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsViewController.swift; sourceTree = "<group>"; };
+		5B8614171F76CCE700C497D2 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		5B8614191F76CD2B00C497D2 /* ShopDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailViewController.swift; sourceTree = "<group>"; };
+		5B86141D1F76CDAC00C497D2 /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
 		5BE7AB381F73D2EB0018CF7D /* MADridLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MADridLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE7AB3B1F73D2EB0018CF7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5BE7AB3D1F73D2EB0018CF7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5BE7AB401F73D2EB0018CF7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BE7AB421F73D2EB0018CF7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BE7AB451F73D2EB0018CF7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,7 +86,11 @@
 		5B8613FC1F74F3B300C497D2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5BE7AB3D1F73D2EB0018CF7D /* ViewController.swift */,
+				5B8614131F76CCD800C497D2 /* MainViewController.swift */,
+				5B8614151F76CCDF00C497D2 /* ShopsViewController.swift */,
+				5B8614171F76CCE700C497D2 /* ActivitiesViewController.swift */,
+				5B8614191F76CD2B00C497D2 /* ShopDetailViewController.swift */,
+				5B86141D1F76CDAC00C497D2 /* ActivityDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -246,11 +258,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B86141E1F76CDAC00C497D2 /* ActivityDetailViewController.swift in Sources */,
 				5B8614081F76BDB700C497D2 /* DownloadShoptivitiesInteractor.swift in Sources */,
 				5B86140A1F76BFC100C497D2 /* DownloadShoptivitiesInteractorTest.swift in Sources */,
+				5B86141A1F76CD2B00C497D2 /* ShopDetailViewController.swift in Sources */,
 				5B8614031F75140B00C497D2 /* Shoptivities.swift in Sources */,
+				5B8614141F76CCD800C497D2 /* MainViewController.swift in Sources */,
+				5B8614161F76CCDF00C497D2 /* ShopsViewController.swift in Sources */,
+				5B8614181F76CCE700C497D2 /* ActivitiesViewController.swift in Sources */,
 				5B8614011F75130800C497D2 /* Shoptivity.swift in Sources */,
-				5BE7AB3E1F73D2EB0018CF7D /* ViewController.swift in Sources */,
 				5BE7AB3C1F73D2EB0018CF7D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
