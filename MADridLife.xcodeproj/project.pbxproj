@@ -22,6 +22,7 @@
 		5B967CD11F76D8F1005FE0A2 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B967CD01F76D8F1005FE0A2 /* ActivityCell.swift */; };
 		5B967CD31F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B967CD21F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift */; };
 		5B967CD61F76E2E9005FE0A2 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B967CD51F76E2E9005FE0A2 /* JSONParser.swift */; };
+		5B967CD81F76F1E1005FE0A2 /* String+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B967CD71F76F1E1005FE0A2 /* String+Image.swift */; };
 		5BE7AB3C1F73D2EB0018CF7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7AB3B1F73D2EB0018CF7D /* AppDelegate.swift */; };
 		5BE7AB411F73D2EB0018CF7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7AB3F1F73D2EB0018CF7D /* Main.storyboard */; };
 		5BE7AB431F73D2EB0018CF7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7AB421F73D2EB0018CF7D /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		5B967CD01F76D8F1005FE0A2 /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		5B967CD21F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonwloadShoptivitiesInteractorImpl.swift; sourceTree = "<group>"; };
 		5B967CD51F76E2E9005FE0A2 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		5B967CD71F76F1E1005FE0A2 /* String+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Image.swift"; sourceTree = "<group>"; };
 		5BE7AB381F73D2EB0018CF7D /* MADridLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MADridLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE7AB3B1F73D2EB0018CF7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BE7AB401F73D2EB0018CF7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				5B967CD51F76E2E9005FE0A2 /* JSONParser.swift */,
+				5B967CD71F76F1E1005FE0A2 /* String+Image.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			files = (
 				5B86141E1F76CDAC00C497D2 /* ActivityDetailViewController.swift in Sources */,
 				5B8614081F76BDB700C497D2 /* DownloadShoptivitiesInteractor.swift in Sources */,
+				5B967CD81F76F1E1005FE0A2 /* String+Image.swift in Sources */,
 				5B86140A1F76BFC100C497D2 /* DownloadShoptivitiesInteractorTest.swift in Sources */,
 				5B86141A1F76CD2B00C497D2 /* ShopDetailViewController.swift in Sources */,
 				5B8614031F75140B00C497D2 /* Shoptivities.swift in Sources */,
