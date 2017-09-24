@@ -11,7 +11,6 @@
 		5B8614031F75140B00C497D2 /* Shoptivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8614021F75140B00C497D2 /* Shoptivities.swift */; };
 		5B8614051F7520D400C497D2 /* ShoptivitiesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8614041F7520D400C497D2 /* ShoptivitiesTest.swift */; };
 		5B8614081F76BDB700C497D2 /* DownloadShoptivitiesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8614071F76BDB700C497D2 /* DownloadShoptivitiesInteractor.swift */; };
-		5B86140A1F76BFC100C497D2 /* DownloadShoptivitiesInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8614091F76BFC100C497D2 /* DownloadShoptivitiesInteractorTest.swift */; };
 		5B8614141F76CCD800C497D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8614131F76CCD800C497D2 /* MainViewController.swift */; };
 		5B8614161F76CCDF00C497D2 /* ShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8614151F76CCDF00C497D2 /* ShopsViewController.swift */; };
 		5B8614181F76CCE700C497D2 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8614171F76CCE700C497D2 /* ActivitiesViewController.swift */; };
@@ -45,7 +44,6 @@
 		5B8614021F75140B00C497D2 /* Shoptivities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoptivities.swift; sourceTree = "<group>"; };
 		5B8614041F7520D400C497D2 /* ShoptivitiesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoptivitiesTest.swift; sourceTree = "<group>"; };
 		5B8614071F76BDB700C497D2 /* DownloadShoptivitiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadShoptivitiesInteractor.swift; sourceTree = "<group>"; };
-		5B8614091F76BFC100C497D2 /* DownloadShoptivitiesInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadShoptivitiesInteractorTest.swift; sourceTree = "<group>"; };
 		5B8614131F76CCD800C497D2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5B8614151F76CCDF00C497D2 /* ShopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsViewController.swift; sourceTree = "<group>"; };
 		5B8614171F76CCE700C497D2 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				5B8614071F76BDB700C497D2 /* DownloadShoptivitiesInteractor.swift */,
-				5B8614091F76BFC100C497D2 /* DownloadShoptivitiesInteractorTest.swift */,
 				5B967CD21F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift */,
 			);
 			path = Interactors;
@@ -287,7 +284,6 @@
 				5B86141E1F76CDAC00C497D2 /* ActivityDetailViewController.swift in Sources */,
 				5B8614081F76BDB700C497D2 /* DownloadShoptivitiesInteractor.swift in Sources */,
 				5B967CD81F76F1E1005FE0A2 /* String+Image.swift in Sources */,
-				5B86140A1F76BFC100C497D2 /* DownloadShoptivitiesInteractorTest.swift in Sources */,
 				5B86141A1F76CD2B00C497D2 /* ShopDetailViewController.swift in Sources */,
 				5B8614031F75140B00C497D2 /* Shoptivities.swift in Sources */,
 				5B967CD31F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift in Sources */,

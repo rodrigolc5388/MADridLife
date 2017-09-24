@@ -13,13 +13,18 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        initializeData()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    func initializeData(){
+        let downloadShoptivitiesInteractor: DownloadShoptivitiesInteractor = DonwloadShoptivitiesInteractorImpl()
+        
+        downloadShoptivitiesInteractor.execute{ (shops: Shoptivities, activities: Shoptivities) in
+            
+            print("Aquí van las tiendas: \(shops.get(index: 5).name)")
+            print("Aquí van las tiendas: \(activities.get(index: 5).name)")
+        }
     }
- 
 
 }
