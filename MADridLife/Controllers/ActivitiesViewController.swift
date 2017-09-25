@@ -39,7 +39,7 @@ class ActivitiesViewController: UIViewController, UICollectionViewDelegate, UICo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell: ActivityCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShopCell", for: indexPath) as! ActivityCell
+        let cell: ActivityCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ActivityCell", for: indexPath) as! ActivityCell
         let activity: Shoptivity = (self.activities?.get(index: indexPath.row))!
         cell.refresh(activity: activity)
         return cell
