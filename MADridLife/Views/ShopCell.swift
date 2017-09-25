@@ -19,10 +19,9 @@ class ShopCell: UICollectionViewCell {
         self.shop = shop
         
         self.label.text = shop.name
-        /*self.shop?.logo.loadImage(into: imageView)
+        self.shop?.logo.loadImage(into: imageView)
         UIView.animate(withDuration: 1.0) {
             self.imageView.layer.cornerRadius = 30
-        }*/
+        }
     }
-    
 }
