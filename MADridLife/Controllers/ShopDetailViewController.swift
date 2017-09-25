@@ -11,6 +11,8 @@ import MapKit
 
 class ShopDetailViewController: UIViewController {
 
+    var shop: Shoptivity!
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var shopNameLabel: UILabel!
     @IBOutlet weak var descriptionView: UITextView!

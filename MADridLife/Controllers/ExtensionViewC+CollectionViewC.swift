@@ -8,26 +8,22 @@
 
 import UIKit
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+extension ShopsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return fetchedResultsController.sections?.count ?? 0
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        let sectionInfo = fetchedResultsController.sections![section]
-        return sectionInfo.numberOfObjects
+        return (self.shops?.count())!
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell: ShopCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShopCell", for: indexPath) as! ShopCell
-        
-        let shopCD: ShopCD = fetchedResultsController.object(at: indexPath)
-        
-        cell.refresh(shop: mapShopCDIntoShop(shopCD: shopCD))
+        let shop: Shoptivity = (self.shops?.get(index: indexPath.row))!
+        cell.refresh(shop: shop)
         return cell
     }
-    
-    
 }
+

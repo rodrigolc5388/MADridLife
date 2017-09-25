@@ -10,16 +10,44 @@ import UIKit
 import MapKit
 
 class ShopsViewController: UIViewController {
-
+ 
+    var shops: Shoptivities?
+    
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var shopsCV: UICollectionView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        initializeData()
+        
     }
-
-
+    
+    func initializeData(){
+        let downloadShoptivitiesInteractor: DownloadShoptivitiesInteractor = DonwloadShoptivitiesInteractorImpl()
+        
+        downloadShoptivitiesInteractor.execute{ (shops: Shoptivities, activities: Shoptivities) in
+            
+            self.shops = shops
+            self.shopsCV.delegate = self
+            self.shopsCV.dataSource = self
+        }
+    }
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let shop: Shoptivity = (self.shops?.get(index: indexPath.row))!
+        self.performSegue(withIdentifier: "ShowShopDetailSegue", sender: shop)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowShopDetailSegue" {
+            let vc = segue.destination as! ShopDetailViewController
+            let shop: Shoptivity = sender as! Shoptivity
+            vc.shop = shop
+        }
+    }
+    
 }
