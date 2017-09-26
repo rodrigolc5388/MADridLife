@@ -11,6 +11,8 @@ import MapKit
 
 class ActivityDetailViewController: UIViewController {
 
+    var activity: Shoptivity!
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var activityNameLabel: UILabel!
     @IBOutlet weak var descriptionView: UITextView!
@@ -21,7 +23,12 @@ class ActivityDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.title = activity.name
+        self.activityNameLabel.text = activity.name
+        self.activity.image.loadImage(into: imageView)
+        self.descriptionView.text = activity.description_es
+        self.openingHoursLabel.text = activity.openingHours_es
+        self.addressLabel.text = activity.address
     }
 
 }

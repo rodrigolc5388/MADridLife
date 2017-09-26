@@ -24,7 +24,13 @@ class ShopDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.title = shop.name
+        self.shopNameLabel.text = shop.name
+        self.shop.image.loadImage(into: imageView)
+        self.descriptionView.text = shop.description_es
+        self.openingHoursLabel.text = shop.openingHours_es
+        self.addressLabel.text = shop.address
+        
     }
 
 }
