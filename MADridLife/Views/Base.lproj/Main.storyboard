@@ -89,7 +89,6 @@
                                         <connections>
                                             <outlet property="imageView" destination="adf-Sm-iyW" id="Qo0-tw-3Wd"/>
                                             <outlet property="label" destination="cY6-8F-ntm" id="VPz-ZA-f3n"/>
-                                            <segue destination="QNq-o9-H6L" kind="show" identifier="ActivityDetailSegue" id="A6b-f6-hfu"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -101,6 +100,7 @@
                     <connections>
                         <outlet property="activitiesCV" destination="WHo-s3-fRp" id="tmD-LA-2Bh"/>
                         <outlet property="mapView" destination="GJM-4A-vcu" id="lBR-KB-qur"/>
+                        <segue destination="QNq-o9-H6L" kind="show" identifier="ActivityDetailSegue" id="fX0-j1-C9B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3X8-Dn-mFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -246,7 +246,6 @@
                                         <connections>
                                             <outlet property="imageView" destination="Rx5-ET-u6I" id="ZaD-sg-fsx"/>
                                             <outlet property="label" destination="hBM-da-jEb" id="OSL-PA-Xyk"/>
-                                            <segue destination="a89-q6-scX" kind="show" identifier="ShopDetailSegue" id="9Zf-t5-K8z"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -258,6 +257,7 @@
                     <connections>
                         <outlet property="mapView" destination="IfD-Pp-kWn" id="oJb-uM-Gk2"/>
                         <outlet property="shopsCV" destination="ae6-Vh-lrb" id="RVa-Ry-TtP"/>
+                        <segue destination="a89-q6-scX" kind="show" identifier="ShopDetailSegue" id="PZe-Z4-cSf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NGf-dS-Tll" userLabel="First Responder" sceneMemberID="firstResponder"/>

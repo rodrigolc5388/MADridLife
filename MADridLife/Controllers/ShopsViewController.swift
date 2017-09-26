@@ -35,18 +35,17 @@ class ShopsViewController: UIViewController {
     }
     
     
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let shop: Shoptivity = (self.shops?.get(index: indexPath.row))!
-        self.performSegue(withIdentifier: "ShowShopDetailSegue", sender: shop)
+        self.performSegue(withIdentifier: "ShopDetailSegue", sender: shop)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ShowShopDetailSegue" {
+        if segue.identifier == "ShopDetailSegue" {
             let vc = segue.destination as! ShopDetailViewController
-            let shop: Shoptivity = sender as! Shoptivity
-            vc.shop = shop
+            vc.shop = sender as! Shoptivity
         }
     }
     

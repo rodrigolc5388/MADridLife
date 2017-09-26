@@ -44,5 +44,19 @@ class ActivitiesViewController: UIViewController, UICollectionViewDelegate, UICo
         cell.refresh(activity: activity)
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let activity: Shoptivity = (self.activities?.get(index: indexPath.row))!
+        self.performSegue(withIdentifier: "ActivityDetailSegue", sender: activity)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ActivityDetailSegue" {
+            let vc = segue.destination as! ActivityDetailViewController
+            vc.activity = sender as! Shoptivity
+        }
+    }
 
 }
