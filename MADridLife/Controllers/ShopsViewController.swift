@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import CoreData
 import MapKit
 
 class ShopsViewController: UIViewController {
  
     var shops: Shoptivities?
+    var context: NSManagedObjectContext!
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var shopsCV: UICollectionView!

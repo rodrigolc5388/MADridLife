@@ -10,6 +10,9 @@
 		5B7D6E091F7A380600AE5B95 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D6E081F7A380600AE5B95 /* CoreDataStack.swift */; };
 		5B7D6E0C1F7A3B9700AE5B95 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7D6E0B1F7A3B9700AE5B95 /* CoreData.framework */; };
 		5B7D6E121F7A466B00AE5B95 /* MADridLife.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D6E101F7A466B00AE5B95 /* MADridLife.xcdatamodeld */; };
+		5B7D6E141F7A49F700AE5B95 /* SaveShoptivitiesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D6E131F7A49F700AE5B95 /* SaveShoptivitiesInteractor.swift */; };
+		5B7D6E161F7A4ACD00AE5B95 /* SaveShoptivitiesInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D6E151F7A4ACD00AE5B95 /* SaveShoptivitiesInteractorImpl.swift */; };
+		5B7D6E181F7A4B1F00AE5B95 /* MapShoptivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D6E171F7A4B1F00AE5B95 /* MapShoptivity.swift */; };
 		5B8614011F75130800C497D2 /* Shoptivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8614001F75130800C497D2 /* Shoptivity.swift */; };
 		5B8614031F75140B00C497D2 /* Shoptivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8614021F75140B00C497D2 /* Shoptivities.swift */; };
 		5B8614051F7520D400C497D2 /* ShoptivitiesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8614041F7520D400C497D2 /* ShoptivitiesTest.swift */; };
@@ -46,6 +49,9 @@
 		5B7D6E081F7A380600AE5B95 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		5B7D6E0B1F7A3B9700AE5B95 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		5B7D6E111F7A466B00AE5B95 /* MADridLife.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MADridLife.xcdatamodel; sourceTree = "<group>"; };
+		5B7D6E131F7A49F700AE5B95 /* SaveShoptivitiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveShoptivitiesInteractor.swift; sourceTree = "<group>"; };
+		5B7D6E151F7A4ACD00AE5B95 /* SaveShoptivitiesInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveShoptivitiesInteractorImpl.swift; sourceTree = "<group>"; };
+		5B7D6E171F7A4B1F00AE5B95 /* MapShoptivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapShoptivity.swift; sourceTree = "<group>"; };
 		5B8614001F75130800C497D2 /* Shoptivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoptivity.swift; sourceTree = "<group>"; };
 		5B8614021F75140B00C497D2 /* Shoptivities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoptivities.swift; sourceTree = "<group>"; };
 		5B8614041F7520D400C497D2 /* ShoptivitiesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoptivitiesTest.swift; sourceTree = "<group>"; };
@@ -139,6 +145,8 @@
 			children = (
 				5B8614071F76BDB700C497D2 /* DownloadShoptivitiesInteractor.swift */,
 				5B967CD21F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift */,
+				5B7D6E131F7A49F700AE5B95 /* SaveShoptivitiesInteractor.swift */,
+				5B7D6E151F7A4ACD00AE5B95 /* SaveShoptivitiesInteractorImpl.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -149,6 +157,7 @@
 				5B967CD51F76E2E9005FE0A2 /* JSONParser.swift */,
 				5B967CD71F76F1E1005FE0A2 /* String+Image.swift */,
 				5B7D6E081F7A380600AE5B95 /* CoreDataStack.swift */,
+				5B7D6E171F7A4B1F00AE5B95 /* MapShoptivity.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -306,9 +315,12 @@
 				5B86141A1F76CD2B00C497D2 /* ShopDetailViewController.swift in Sources */,
 				5B8614031F75140B00C497D2 /* Shoptivities.swift in Sources */,
 				5B967CD31F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift in Sources */,
+				5B7D6E181F7A4B1F00AE5B95 /* MapShoptivity.swift in Sources */,
 				5B8614141F76CCD800C497D2 /* MainViewController.swift in Sources */,
 				5B7D6E091F7A380600AE5B95 /* CoreDataStack.swift in Sources */,
 				5B8614161F76CCDF00C497D2 /* ShopsViewController.swift in Sources */,
+				5B7D6E141F7A49F700AE5B95 /* SaveShoptivitiesInteractor.swift in Sources */,
+				5B7D6E161F7A4ACD00AE5B95 /* SaveShoptivitiesInteractorImpl.swift in Sources */,
 				5B967CD11F76D8F1005FE0A2 /* ActivityCell.swift in Sources */,
 				5B967CCF1F76D69D005FE0A2 /* ShopCell.swift in Sources */,
 				5B8614181F76CCE700C497D2 /* ActivitiesViewController.swift in Sources */,
