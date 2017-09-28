@@ -44,7 +44,8 @@ class ActivitiesViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ActivityDetailSegue" {
             let vc = segue.destination as! ActivityDetailViewController
-            vc.activity = sender as! Shoptivity
+            let activityCD = sender as! ShoptivityCD
+            vc.activity = mapShoptivityCDIntoShoptivity(shoptivityCD: activityCD)
         }
     }
     
@@ -67,7 +68,7 @@ class ActivitiesViewController: UIViewController {
         // Edit the section name key path and cache name if appropriate.
         // nil for section name key path means "no sections".
         // fetchRequest == SELECT * FROM EVENT ORDER BY TIMESTAMP DESC
-        _fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.context!, sectionNameKeyPath: nil, cacheName: "ShopsCacheFile")
+        _fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.context!, sectionNameKeyPath: nil, cacheName: "ActivitiesCacheFile")
         // aFetchedResultsController.delegate = self
         // _fetchedResultsController = aFetchedResultsController
         

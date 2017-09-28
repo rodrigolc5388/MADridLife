@@ -33,7 +33,7 @@ extension ShopsViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let shop: Shoptivity = (self.shops?.get(index: indexPath.row))!
+        let shop: ShoptivityCD = self.fetchedResultsController.object(at: indexPath)
         self.performSegue(withIdentifier: "ShopDetailSegue", sender: shop)
     }
 }

@@ -33,7 +33,7 @@ extension ActivitiesViewController: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let activity: Shoptivity = (self.activities?.get(index: indexPath.row))!
+        let activity: ShoptivityCD = self.fetchedResultsController.object(at: indexPath)
         self.performSegue(withIdentifier: "ActivityDetailSegue", sender: activity)
         
     }

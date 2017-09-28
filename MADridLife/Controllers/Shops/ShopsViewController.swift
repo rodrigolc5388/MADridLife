@@ -12,7 +12,7 @@ import MapKit
 
 class ShopsViewController: UIViewController {
  
-    var shops: Shoptivities?
+    //var shops: Shoptivities?
     var context: NSManagedObjectContext!
     
     @IBOutlet weak var mapView: MKMapView!
@@ -30,12 +30,14 @@ class ShopsViewController: UIViewController {
         
         downloadShoptivitiesInteractor.execute{ (shops: Shoptivities, activities: Shoptivities) in
             
-            self.shops = shops
-            self.shopsCV.delegate = self
-            self.shopsCV.dataSource = self
+            // self.shops = shops
+            /*self.shopsCV.delegate = self
+            self.shopsCV.dataSource = self*/
             
             let cacheInteractor = SaveShoptivitiesInteractorImpl()
             cacheInteractor.execute(shops: shops, activities: activities, context: self.context, onSuccess: { (shops: Shoptivities, activities: Shoptivities) in
+                self.shopsCV.delegate = self
+                self.shopsCV.dataSource = self
             })
 
         }
@@ -45,7 +47,8 @@ class ShopsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShopDetailSegue" {
             let vc = segue.destination as! ShopDetailViewController
-            vc.shop = sender as! Shoptivity
+            let shopCD = sender as! ShoptivityCD
+            vc.shop = mapShoptivityCDIntoShoptivity(shoptivityCD: shopCD)
         }
     }
     
