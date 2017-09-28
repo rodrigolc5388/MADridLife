@@ -32,6 +32,10 @@ class ActivitiesViewController: UIViewController, UICollectionViewDelegate, UICo
             self.activities = activities
             self.activitiesCV.delegate = self
             self.activitiesCV.dataSource = self
+            
+            let cacheInteractor = SaveShoptivitiesInteractorImpl()
+            cacheInteractor.execute(shops: shops, activities: activities, context: self.context, onSuccess: { (shops: Shoptivities, activities: Shoptivities) in
+            })
         }
     }
     

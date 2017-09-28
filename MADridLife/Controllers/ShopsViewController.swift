@@ -34,10 +34,9 @@ class ShopsViewController: UIViewController {
             self.shopsCV.delegate = self
             self.shopsCV.dataSource = self
             
-            /*let cacheInteractor = SaveShoptivitiesInteractorImpl()
+            let cacheInteractor = SaveShoptivitiesInteractorImpl()
             cacheInteractor.execute(shops: shops, activities: activities, context: self.context, onSuccess: { (shops: Shoptivities, activities: Shoptivities) in
-                
-            })*/
+            })
 
         }
     }
