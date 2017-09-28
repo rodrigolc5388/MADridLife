@@ -18,7 +18,7 @@ class MainViewController: UIViewController {
 
     }
     
-   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowShopsSegue"{
             let svc = segue.destination as! ShopsViewController
             svc.context = self.context
@@ -28,5 +28,5 @@ class MainViewController: UIViewController {
             let avc = segue.destination as! ActivitiesViewController
             avc.context = self.context
         }
-    }*/
+    }
 }
