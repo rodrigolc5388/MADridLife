@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5B33A4811F7BEB7C00F9D518 /* SaveShoptivitiesInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B33A4801F7BEB7C00F9D518 /* SaveShoptivitiesInteractorImpl.swift */; };
+		5B33A4851F7CF30A00F9D518 /* ActivitiesVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B33A4841F7CF30A00F9D518 /* ActivitiesVCExtension.swift */; };
 		5B7D6E091F7A380600AE5B95 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D6E081F7A380600AE5B95 /* CoreDataStack.swift */; };
 		5B7D6E0C1F7A3B9700AE5B95 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7D6E0B1F7A3B9700AE5B95 /* CoreData.framework */; };
 		5B7D6E121F7A466B00AE5B95 /* MADridLife.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D6E101F7A466B00AE5B95 /* MADridLife.xcdatamodeld */; };
@@ -22,7 +23,7 @@
 		5B8614181F76CCE700C497D2 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8614171F76CCE700C497D2 /* ActivitiesViewController.swift */; };
 		5B86141A1F76CD2B00C497D2 /* ShopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8614191F76CD2B00C497D2 /* ShopDetailViewController.swift */; };
 		5B86141E1F76CDAC00C497D2 /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86141D1F76CDAC00C497D2 /* ActivityDetailViewController.swift */; };
-		5B967CCD1F76D59F005FE0A2 /* ExtensionViewC+CollectionViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B967CCC1F76D59F005FE0A2 /* ExtensionViewC+CollectionViewC.swift */; };
+		5B967CCD1F76D59F005FE0A2 /* ShopsCVExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B967CCC1F76D59F005FE0A2 /* ShopsCVExtension.swift */; };
 		5B967CCF1F76D69D005FE0A2 /* ShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B967CCE1F76D69D005FE0A2 /* ShopCell.swift */; };
 		5B967CD11F76D8F1005FE0A2 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B967CD01F76D8F1005FE0A2 /* ActivityCell.swift */; };
 		5B967CD31F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B967CD21F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		5B33A4801F7BEB7C00F9D518 /* SaveShoptivitiesInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveShoptivitiesInteractorImpl.swift; sourceTree = "<group>"; };
+		5B33A4841F7CF30A00F9D518 /* ActivitiesVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesVCExtension.swift; sourceTree = "<group>"; };
 		5B7D6E081F7A380600AE5B95 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		5B7D6E0B1F7A3B9700AE5B95 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		5B7D6E111F7A466B00AE5B95 /* MADridLife.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MADridLife.xcdatamodel; sourceTree = "<group>"; };
@@ -61,7 +63,7 @@
 		5B8614171F76CCE700C497D2 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
 		5B8614191F76CD2B00C497D2 /* ShopDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailViewController.swift; sourceTree = "<group>"; };
 		5B86141D1F76CDAC00C497D2 /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
-		5B967CCC1F76D59F005FE0A2 /* ExtensionViewC+CollectionViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExtensionViewC+CollectionViewC.swift"; sourceTree = "<group>"; };
+		5B967CCC1F76D59F005FE0A2 /* ShopsCVExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsCVExtension.swift; sourceTree = "<group>"; };
 		5B967CCE1F76D69D005FE0A2 /* ShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCell.swift; sourceTree = "<group>"; };
 		5B967CD01F76D8F1005FE0A2 /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		5B967CD21F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonwloadShoptivitiesInteractorImpl.swift; sourceTree = "<group>"; };
@@ -97,6 +99,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B33A4821F7CF2CA00F9D518 /* Shops */ = {
+			isa = PBXGroup;
+			children = (
+				5B8614151F76CCDF00C497D2 /* ShopsViewController.swift */,
+				5B8614191F76CD2B00C497D2 /* ShopDetailViewController.swift */,
+				5B967CCC1F76D59F005FE0A2 /* ShopsCVExtension.swift */,
+			);
+			path = Shops;
+			sourceTree = "<group>";
+		};
+		5B33A4831F7CF2D800F9D518 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				5B8614171F76CCE700C497D2 /* ActivitiesViewController.swift */,
+				5B86141D1F76CDAC00C497D2 /* ActivityDetailViewController.swift */,
+				5B33A4841F7CF30A00F9D518 /* ActivitiesVCExtension.swift */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
 		5B7D6E0A1F7A3B9600AE5B95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,11 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				5B8614131F76CCD800C497D2 /* MainViewController.swift */,
-				5B8614151F76CCDF00C497D2 /* ShopsViewController.swift */,
-				5B8614171F76CCE700C497D2 /* ActivitiesViewController.swift */,
-				5B8614191F76CD2B00C497D2 /* ShopDetailViewController.swift */,
-				5B86141D1F76CDAC00C497D2 /* ActivityDetailViewController.swift */,
-				5B967CCC1F76D59F005FE0A2 /* ExtensionViewC+CollectionViewC.swift */,
+				5B33A4831F7CF2D800F9D518 /* Activities */,
+				5B33A4821F7CF2CA00F9D518 /* Shops */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -312,6 +331,7 @@
 				5B7D6E121F7A466B00AE5B95 /* MADridLife.xcdatamodeld in Sources */,
 				5B8614081F76BDB700C497D2 /* DownloadShoptivitiesInteractor.swift in Sources */,
 				5B967CD81F76F1E1005FE0A2 /* String+Image.swift in Sources */,
+				5B33A4851F7CF30A00F9D518 /* ActivitiesVCExtension.swift in Sources */,
 				5B86141A1F76CD2B00C497D2 /* ShopDetailViewController.swift in Sources */,
 				5B8614031F75140B00C497D2 /* Shoptivities.swift in Sources */,
 				5B967CD31F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift in Sources */,
@@ -325,7 +345,7 @@
 				5B8614181F76CCE700C497D2 /* ActivitiesViewController.swift in Sources */,
 				5B967CD61F76E2E9005FE0A2 /* JSONParser.swift in Sources */,
 				5B8614011F75130800C497D2 /* Shoptivity.swift in Sources */,
-				5B967CCD1F76D59F005FE0A2 /* ExtensionViewC+CollectionViewC.swift in Sources */,
+				5B967CCD1F76D59F005FE0A2 /* ShopsCVExtension.swift in Sources */,
 				5B33A4811F7BEB7C00F9D518 /* SaveShoptivitiesInteractorImpl.swift in Sources */,
 				5BE7AB3C1F73D2EB0018CF7D /* AppDelegate.swift in Sources */,
 			);

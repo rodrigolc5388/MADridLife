@@ -25,5 +25,11 @@ extension ShopsViewController: UICollectionViewDelegate, UICollectionViewDataSou
         cell.refresh(shop: shop)
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let shop: Shoptivity = (self.shops?.get(index: indexPath.row))!
+        self.performSegue(withIdentifier: "ShopDetailSegue", sender: shop)
+    }
 }
 
