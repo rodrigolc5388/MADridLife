@@ -12,7 +12,6 @@ import MapKit
 
 class ShopsViewController: UIViewController {
  
-    //var shops: Shoptivities?
     var context: NSManagedObjectContext!
     
     @IBOutlet weak var mapView: MKMapView!
@@ -49,16 +48,12 @@ class ShopsViewController: UIViewController {
         fetchRequest.fetchBatchSize = 20
         
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
-        
         fetchRequest.predicate = NSPredicate(format: "typeEntity == %@", "shop")
         //fetchRequest.predicate = NSPredicate(format: "typeEntity != %@", "activity")
         
         // Edit the section name key path and cache name if appropriate.
         // nil for section name key path means "no sections".
-        // fetchRequest == SELECT * FROM EVENT ORDER BY TIMESTAMP DESC
         _fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.context!, sectionNameKeyPath: nil, cacheName: "ShopsCacheFile")
-        // aFetchedResultsController.delegate = self
-        // _fetchedResultsController = aFetchedResultsController
         
         do {
             try _fetchedResultsController!.performFetch()

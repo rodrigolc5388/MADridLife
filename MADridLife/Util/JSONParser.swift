@@ -23,8 +23,8 @@ func parseShops(data: Data) -> Shoptivities{
             shop.description_es = shopJson["description_es"] as! String
             shop.openingHours_en = shopJson["opening_hours_en"] as! String
             shop.openingHours_es = shopJson["opening_hours_es"] as! String
-            //shop.latitude = shopJson["gps_lat"] as! Float
-            //shop.longitude = shopJson["gps_lon"] as! Float
+            shop.latitude = (shopJson["gps_lat"] as! NSString).floatValue
+            shop.longitude = (shopJson["gps_lon"] as! NSString).floatValue
             shop.type = "shop"
             
             shops.add(shoptivity: shop)
@@ -41,17 +41,17 @@ func parseActivities(data: Data) -> Shoptivities{
         let jsonObject = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! Dictionary<String, Any>
         let result = jsonObject["result"] as! [Dictionary<String, Any>]
         
-        for activtyJson in result{
-            let activity = Shoptivity(name: activtyJson["name"]! as! String)
-            activity.address = activtyJson["address"]! as! String
-            activity.logo = activtyJson["logo_img"] as! String
-            activity.image = activtyJson["img"] as! String
-            activity.description_en = activtyJson["description_en"] as! String
-            activity.description_es = activtyJson["description_es"] as! String
-            activity.openingHours_en = activtyJson["opening_hours_en"] as! String
-            activity.openingHours_es = activtyJson["opening_hours_es"] as! String
-            //activity.latitude = activtyJson["gps_lat"] as! Float
-            //activity.longitude = activtyJson["gps_lon"] as! Float
+        for activityJson in result{
+            let activity = Shoptivity(name: activityJson["name"]! as! String)
+            activity.address = activityJson["address"]! as! String
+            activity.logo = activityJson["logo_img"] as! String
+            activity.image = activityJson["img"] as! String
+            activity.description_en = activityJson["description_en"] as! String
+            activity.description_es = activityJson["description_es"] as! String
+            activity.openingHours_en = activityJson["opening_hours_en"] as! String
+            activity.openingHours_es = activityJson["opening_hours_es"] as! String
+            activity.latitude = (activityJson["gps_lat"] as! NSString).floatValue
+            activity.longitude = (activityJson["gps_lon"] as! NSString).floatValue
             activity.type = "activity"
             
             activities.add(shoptivity: activity)

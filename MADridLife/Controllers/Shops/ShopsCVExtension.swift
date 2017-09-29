@@ -11,12 +11,10 @@ import UIKit
 extension ShopsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        //return 1
         return fetchedResultsController.sections?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //return (self.shops?.count())!
         let sectionInfo = fetchedResultsController.sections![section]
         return sectionInfo.numberOfObjects
     }
@@ -24,8 +22,6 @@ extension ShopsViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell: ShopCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShopCell", for: indexPath) as! ShopCell
-        /*let shop: Shoptivity = (self.shops?.get(index: indexPath.row))!
-         cell.refresh(shop: shop)*/
         let shopCD: ShoptivityCD = fetchedResultsController.object(at: indexPath)
         cell.refresh(shop: mapShoptivityCDIntoShoptivity(shoptivityCD: shopCD))
         return cell

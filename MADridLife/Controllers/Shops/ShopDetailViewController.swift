@@ -14,7 +14,6 @@ class ShopDetailViewController: UIViewController {
     var shop: Shoptivity!
     
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var shopNameLabel: UILabel!
     @IBOutlet weak var descriptionView: UITextView!
     @IBOutlet weak var openingHoursLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
@@ -25,7 +24,6 @@ class ShopDetailViewController: UIViewController {
         super.viewDidLoad()
 
         self.title = shop.name
-        self.shopNameLabel.text = shop.name
         self.shop.image.loadImage(into: imageView)
         self.descriptionView.text = shop.description_es
         self.openingHoursLabel.text = shop.openingHours_es

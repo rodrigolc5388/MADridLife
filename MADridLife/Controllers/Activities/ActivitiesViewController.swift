@@ -12,7 +12,6 @@ import MapKit
 
 class ActivitiesViewController: UIViewController {
 
-    //var activities: Shoptivities?
     var context: NSManagedObjectContext!
     
     @IBOutlet weak var mapView: MKMapView!
@@ -53,10 +52,7 @@ class ActivitiesViewController: UIViewController {
         
         // Edit the section name key path and cache name if appropriate.
         // nil for section name key path means "no sections".
-        // fetchRequest == SELECT * FROM EVENT ORDER BY TIMESTAMP DESC
         _fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.context!, sectionNameKeyPath: nil, cacheName: "ActivitiesCacheFile")
-        // aFetchedResultsController.delegate = self
-        // _fetchedResultsController = aFetchedResultsController
         
         do {
             try _fetchedResultsController!.performFetch()
