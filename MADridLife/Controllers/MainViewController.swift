@@ -15,8 +15,23 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        initializeData()
 
     }
+    
+    func initializeData(){
+        let downloadShoptivitiesInteractor: DownloadShoptivitiesInteractor = DonwloadShoptivitiesInteractorImpl()
+        
+        downloadShoptivitiesInteractor.execute{ (shops: Shoptivities, activities: Shoptivities) in
+            
+            let cacheInteractor = SaveShoptivitiesInteractorImpl()
+            cacheInteractor.execute(shops: shops, activities: activities, context: self.context, onSuccess: { (shops: Shoptivities, activities: Shoptivities) in
+            })
+            
+        }
+    }
+
     
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowShopsSegue"{

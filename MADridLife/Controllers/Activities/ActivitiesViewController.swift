@@ -21,23 +21,8 @@ class ActivitiesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        initializeData()
-    }
-    
-    
-    func initializeData(){
-        let downloadShoptivitiesInteractor: DownloadShoptivitiesInteractor = DonwloadShoptivitiesInteractorImpl()
-        
-        downloadShoptivitiesInteractor.execute{ (shops: Shoptivities, activities: Shoptivities) in
-            
-            self.activities = activities
-            self.activitiesCV.delegate = self
-            self.activitiesCV.dataSource = self
-            
-            let cacheInteractor = SaveShoptivitiesInteractorImpl()
-            cacheInteractor.execute(shops: shops, activities: activities, context: self.context, onSuccess: { (shops: Shoptivities, activities: Shoptivities) in
-            })
-        }
+        self.activitiesCV.delegate = self
+        self.activitiesCV.dataSource = self
     }
 
     
