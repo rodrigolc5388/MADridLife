@@ -9,19 +9,34 @@
 import UIKit
 import CoreData
 import MapKit
+import CoreLocation
 
-class ShopsViewController: UIViewController {
+class ShopsViewController: UIViewController, CLLocationManagerDelegate {
  
     var context: NSManagedObjectContext!
+    let locationManager = CLLocationManager()
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var shopsCV: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.delegate = self
 
         self.shopsCV.delegate = self
         self.shopsCV.dataSource = self
+        
+        mapInitial()
+        
+    }
+    
+    func mapInitial(){
+        let initialLocation = CLLocation(latitude: 40.4154, longitude: -3.7074)
+        let regionRadius: CLLocationDistance = 5000
+        let region = MKCoordinateRegionMakeWithDistance(initialLocation.coordinate, regionRadius, regionRadius)
+        self.mapView.setRegion(region, animated: true)
     }
 
     
