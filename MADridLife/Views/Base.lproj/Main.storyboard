@@ -126,13 +126,6 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.3425817438" green="0.33225279569999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvD-UH-3fh" userLabel="activityNameLabel">
-                                                <rect key="frame" x="119" y="238" width="137" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gEi-lU-Lus" userLabel="descriptionView">
                                                 <rect key="frame" x="4" y="296" width="367" height="168"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -189,7 +182,6 @@
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="activityMapView" destination="xVl-Yr-LcQ" id="Kbo-hn-D3C"/>
-                        <outlet property="activityNameLabel" destination="vvD-UH-3fh" id="HKH-cF-KtV"/>
                         <outlet property="addressLabel" destination="kr5-fZ-b7Q" id="1eY-uf-92w"/>
                         <outlet property="descriptionView" destination="gEi-lU-Lus" id="U54-ue-unp"/>
                         <outlet property="imageView" destination="dov-rV-Xn7" id="tnp-PP-oAA"/>
@@ -311,13 +303,6 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ox2-aQ-egg" userLabel="shopNameLabel">
-                                                <rect key="frame" x="119" y="260" width="137" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -350,7 +335,6 @@
                         <outlet property="imageView" destination="pZY-tY-OiT" id="xiM-cn-1Kh"/>
                         <outlet property="openingHoursLabel" destination="p0H-jt-PaQ" id="ymp-hq-QPr"/>
                         <outlet property="shopMapView" destination="0nH-84-j6g" id="eWe-LZ-Dh7"/>
-                        <outlet property="shopNameLabel" destination="Ox2-aQ-egg" id="Vrq-2u-RSD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJT-gC-LPp" userLabel="First Responder" sceneMemberID="firstResponder"/>
