@@ -16,7 +16,9 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        initializeData()
+        ExecuteOnceInteractorImpl().execute{
+            initializeData()
+        }
 
     }
     
@@ -27,6 +29,7 @@ class MainViewController: UIViewController {
             
             let cacheInteractor = SaveShoptivitiesInteractorImpl()
             cacheInteractor.execute(shops: shops, activities: activities, context: self.context, onSuccess: { (shops: Shoptivities, activities: Shoptivities) in
+                SetExecutedOnceInteractorImpl().execute()
             })
             
         }
