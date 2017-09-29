@@ -67,6 +67,10 @@ class ShopsViewController: UIViewController {
         fetchRequest.fetchBatchSize = 20
         
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
+        fetchRequest.predicate = NSPredicate(format: "typeEntity == %@", "shop")
+        //fetchRequest.predicate = NSPredicate(format: "type == %@", typeEntity)
+        //fetchRequest.predicate = NSPredicate(format: "%K == %@", "typeEntity", "shop")
+        
         
         // Edit the section name key path and cache name if appropriate.
         // nil for section name key path means "no sections".

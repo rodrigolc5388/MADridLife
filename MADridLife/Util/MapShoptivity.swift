@@ -20,6 +20,7 @@ func mapShoptivityIntoShoptivityCD(context: NSManagedObjectContext, shoptivity: 
     shoptivityCD.image = shoptivity.image
     shoptivityCD.latitude = shoptivity.latitude ?? 0
     shoptivityCD.longitude = shoptivity.longitude ?? 0
+    shoptivityCD.typeEntity = shoptivity.type
     
     return shoptivityCD
 }
@@ -35,6 +36,7 @@ func mapShoptivityCDIntoShoptivity(shoptivityCD: ShoptivityCD) -> Shoptivity{
     shoptivity.image = shoptivityCD.image ?? ""
     shoptivity.latitude = shoptivityCD.latitude
     shoptivity.longitude = shoptivityCD.longitude
+    shoptivity.type = shoptivityCD.typeEntity ?? ""
     
     return shoptivity
     

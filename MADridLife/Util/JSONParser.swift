@@ -25,6 +25,7 @@ func parseShops(data: Data) -> Shoptivities{
             shop.openingHours_es = shopJson["opening_hours_es"] as! String
             //shop.latitude = shopJson["gps_lat"] as! Float
             //shop.longitude = shopJson["gps_lon"] as! Float
+            shop.type = "shop"
             
             shops.add(shoptivity: shop)
         }
@@ -51,6 +52,7 @@ func parseActivities(data: Data) -> Shoptivities{
             activity.openingHours_es = activtyJson["opening_hours_es"] as! String
             //activity.latitude = activtyJson["gps_lat"] as! Float
             //activity.longitude = activtyJson["gps_lon"] as! Float
+            activity.type = "activity"
             
             activities.add(shoptivity: activity)
         }

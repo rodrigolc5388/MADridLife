@@ -11,8 +11,9 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="openingHours_en" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="openingHours_es" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="typeEntity" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="ShoptivityCD" positionX="-54" positionY="-9" width="128" height="195"/>
+        <element name="ShoptivityCD" positionX="-54" positionY="-9" width="128" height="210"/>
     </elements>
 </model>

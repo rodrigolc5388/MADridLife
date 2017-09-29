@@ -20,6 +20,7 @@ public class Shoptivity {
     var openingHours_en: String = ""
     var openingHours_es: String = ""
     var address: String = ""
+    var type: String = ""
     
     init(name: String){
         self.name = name
