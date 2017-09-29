@@ -12,7 +12,7 @@ import MapKit
 
 class ActivitiesViewController: UIViewController {
 
-    var activities: Shoptivities?
+    //var activities: Shoptivities?
     var context: NSManagedObjectContext!
     
     @IBOutlet weak var mapView: MKMapView!
@@ -49,7 +49,7 @@ class ActivitiesViewController: UIViewController {
         fetchRequest.fetchBatchSize = 20
         
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
-        //fetchRequest.predicate = NSPredicate(format: "typeEntity == activity")
+        fetchRequest.predicate = NSPredicate(format: "typeEntity == %@", "activity")
         
         // Edit the section name key path and cache name if appropriate.
         // nil for section name key path means "no sections".
