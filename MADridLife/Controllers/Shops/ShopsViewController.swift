@@ -31,7 +31,7 @@ class ShopsViewController: UIViewController {
         
         self.mapView.delegate = self
         
-        mapView.register(AnnotationMarkerView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        mapView.register(ShopAnnotationMarkerView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
         
         mapInitial()
         createPins()

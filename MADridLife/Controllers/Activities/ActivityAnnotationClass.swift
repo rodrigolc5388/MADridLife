@@ -1,5 +1,5 @@
 //
-//  ShopAnnotationClass.swift
+//  ActivityAnnotationClass.swift
 //  MADridLife
 //
 //  Created by Rodrigo Limpias Cossio on 30/9/17.
@@ -10,19 +10,19 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class ShopAnnotation: NSObject, MKAnnotation {
+class ActivityAnnotation: NSObject, MKAnnotation {
     let title: String?
     let address: String?
     let logo: String?
     let coordinate: CLLocationCoordinate2D
-    let shopCD: ShoptivityCD
+    let activityCD: ShoptivityCD
     
-    init(shopCD: ShoptivityCD, coordinate: CLLocationCoordinate2D){
-        self.title = shopCD.name
-        self.address = shopCD.address
-        self.logo = shopCD.logo
+    init(activityCD: ShoptivityCD, coordinate: CLLocationCoordinate2D){
+        self.title = activityCD.name
+        self.address = activityCD.address
+        self.logo = activityCD.logo
         self.coordinate = coordinate
-        self.shopCD = shopCD
+        self.activityCD = activityCD
     }
     
     var subtitle: String? {
@@ -35,24 +35,37 @@ class ShopAnnotation: NSObject, MKAnnotation {
 }
 
 
-
-class ShopAnnotationMarkerView: MKMarkerAnnotationView {
+class ActivityAnnotationMarkerView: MKMarkerAnnotationView {
     override var annotation: MKAnnotation? {
         willSet {
             
-            guard let shopAnnotation = newValue as? ShopAnnotation else { return }
+            guard let activityAnnotation = newValue as? ActivityAnnotation else { return }
             canShowCallout = true
             calloutOffset = CGPoint(x: -5, y: 5)
             
             let logoButton = UIButton(frame: CGRect(origin: CGPoint.zero, size: CGSize(width:30, height: 30)))
-            logoButton.setBackgroundImage(shopAnnotation.logo?.getImage(), for: UIControlState())
+            logoButton.setBackgroundImage(activityAnnotation.logo?.getImage(), for: UIControlState())
             rightCalloutAccessoryView = logoButton
             
             //glyphImage = shopAnnotation.logo?.getImage()
-
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

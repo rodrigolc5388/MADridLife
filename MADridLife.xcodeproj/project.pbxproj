@@ -10,6 +10,7 @@
 		5B1FA99C1F7EEE530061383F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1FA99B1F7EEE530061383F /* MapKit.framework */; };
 		5B1FA99E1F7EFA2D0061383F /* ShopsMapExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FA99D1F7EFA2D0061383F /* ShopsMapExtension.swift */; };
 		5B1FA9A01F7F1D3A0061383F /* ShopAnnotationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FA99F1F7F1D3A0061383F /* ShopAnnotationClass.swift */; };
+		5B1FA9A21F7FF3720061383F /* ActivityAnnotationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FA9A11F7FF3720061383F /* ActivityAnnotationClass.swift */; };
 		5B33A4811F7BEB7C00F9D518 /* SaveShoptivitiesInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B33A4801F7BEB7C00F9D518 /* SaveShoptivitiesInteractorImpl.swift */; };
 		5B33A4851F7CF30A00F9D518 /* ActivitiesVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B33A4841F7CF30A00F9D518 /* ActivitiesVCExtension.swift */; };
 		5B7D6E091F7A380600AE5B95 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D6E081F7A380600AE5B95 /* CoreDataStack.swift */; };
@@ -57,6 +58,7 @@
 		5B1FA99B1F7EEE530061383F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5B1FA99D1F7EFA2D0061383F /* ShopsMapExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsMapExtension.swift; sourceTree = "<group>"; };
 		5B1FA99F1F7F1D3A0061383F /* ShopAnnotationClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopAnnotationClass.swift; sourceTree = "<group>"; };
+		5B1FA9A11F7FF3720061383F /* ActivityAnnotationClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityAnnotationClass.swift; sourceTree = "<group>"; };
 		5B33A4801F7BEB7C00F9D518 /* SaveShoptivitiesInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveShoptivitiesInteractorImpl.swift; sourceTree = "<group>"; };
 		5B33A4841F7CF30A00F9D518 /* ActivitiesVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesVCExtension.swift; sourceTree = "<group>"; };
 		5B7D6E081F7A380600AE5B95 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				5B8614171F76CCE700C497D2 /* ActivitiesViewController.swift */,
 				5B86141D1F76CDAC00C497D2 /* ActivityDetailViewController.swift */,
 				5B33A4841F7CF30A00F9D518 /* ActivitiesVCExtension.swift */,
+				5B1FA9A11F7FF3720061383F /* ActivityAnnotationClass.swift */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				5B33A4851F7CF30A00F9D518 /* ActivitiesVCExtension.swift in Sources */,
 				5B86141A1F76CD2B00C497D2 /* ShopDetailViewController.swift in Sources */,
 				5B8614031F75140B00C497D2 /* Shoptivities.swift in Sources */,
+				5B1FA9A21F7FF3720061383F /* ActivityAnnotationClass.swift in Sources */,
 				5B967CD31F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift in Sources */,
 				5B7D6E181F7A4B1F00AE5B95 /* MapShoptivity.swift in Sources */,
 				5B8614141F76CCD800C497D2 /* MainViewController.swift in Sources */,
