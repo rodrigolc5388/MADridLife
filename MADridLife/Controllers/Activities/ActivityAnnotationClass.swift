@@ -35,6 +35,7 @@ class ActivityAnnotation: NSObject, MKAnnotation {
 }
 
 
+
 class ActivityAnnotationMarkerView: MKMarkerAnnotationView {
     override var annotation: MKAnnotation? {
         willSet {

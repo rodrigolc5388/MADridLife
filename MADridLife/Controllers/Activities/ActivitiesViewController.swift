@@ -9,10 +9,13 @@
 import UIKit
 import CoreData
 import MapKit
+import CoreLocation
 
 class ActivitiesViewController: UIViewController {
 
     var context: NSManagedObjectContext!
+    let locationManager = CLLocationManager()
+    var activitiesList: [ActivityAnnotation]?
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var activitiesCV: UICollectionView!
