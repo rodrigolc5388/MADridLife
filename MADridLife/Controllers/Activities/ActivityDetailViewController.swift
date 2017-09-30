@@ -9,9 +9,10 @@
 import UIKit
 import MapKit
 
+
 class ActivityDetailViewController: UIViewController {
 
-    var activity: Shoptivity!
+    var activity: ShoptivityCD!
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var descriptionView: UITextView!
@@ -23,10 +24,23 @@ class ActivityDetailViewController: UIViewController {
         super.viewDidLoad()
 
         self.title = activity.name
-        self.activity.image.loadImage(into: imageView)
+        self.activity.image?.loadImage(into: imageView)
         self.descriptionView.text = activity.description_es
         self.openingHoursLabel.text = activity.openingHours_es
         self.addressLabel.text = activity.address
+        mapInitial()
+        
+    }
+    
+    func mapInitial(){
+        let initialLocation = CLLocation(latitude: CLLocationDegrees(activity.latitude), longitude: CLLocationDegrees(activity.longitude))
+        let regionRadius : CLLocationDistance = 200
+        let region = MKCoordinateRegionMakeWithDistance(initialLocation.coordinate, regionRadius, regionRadius)
+        
+        let activityPin = ActivityAnnotation(activityCD: activity, coordinate: CLLocationCoordinate2D(latitude: CLLocationDegrees(activity.latitude), longitude: CLLocationDegrees(activity.longitude)))
+        
+        self.activityMapView.setRegion(region, animated: true)
+        self.activityMapView.addAnnotation(activityPin)
     }
 
 }

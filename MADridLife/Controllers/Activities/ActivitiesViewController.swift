@@ -22,17 +22,26 @@ class ActivitiesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.delegate = self
 
         self.activitiesCV.delegate = self
         self.activitiesCV.dataSource = self
+        
+        self.mapView.delegate = self
+        
+        mapView.register(ActivityAnnotationMarkerView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        
+        mapInitial()
+        createPins()
     }
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ActivityDetailSegue" {
             let vc = segue.destination as! ActivityDetailViewController
-            let activityCD = sender as! ShoptivityCD
-            vc.activity = mapShoptivityCDIntoShoptivity(shoptivityCD: activityCD)
+            vc.activity = sender as! ShoptivityCD
         }
     }
     
