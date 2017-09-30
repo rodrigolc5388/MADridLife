@@ -11,10 +11,11 @@ import CoreData
 import MapKit
 import CoreLocation
 
-class ShopsViewController: UIViewController, CLLocationManagerDelegate {
+class ShopsViewController: UIViewController {
  
     var context: NSManagedObjectContext!
     let locationManager = CLLocationManager()
+    var shopsList: [ShopAnnotation]?
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var shopsCV: UICollectionView!
@@ -28,23 +29,20 @@ class ShopsViewController: UIViewController, CLLocationManagerDelegate {
         self.shopsCV.delegate = self
         self.shopsCV.dataSource = self
         
+        self.mapView.delegate = self
+        
+        mapView.register(AnnotationMarkerView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        
         mapInitial()
+        createPins()
         
     }
     
-    func mapInitial(){
-        let initialLocation = CLLocation(latitude: 40.4154, longitude: -3.7074)
-        let regionRadius: CLLocationDistance = 5000
-        let region = MKCoordinateRegionMakeWithDistance(initialLocation.coordinate, regionRadius, regionRadius)
-        self.mapView.setRegion(region, animated: true)
-    }
 
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShopDetailSegue" {
             let vc = segue.destination as! ShopDetailViewController
-            let shopCD = sender as! ShoptivityCD
-            vc.shop = mapShoptivityCDIntoShoptivity(shoptivityCD: shopCD)
+            vc.shop = sender as! ShoptivityCD
         }
     }
     
