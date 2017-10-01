@@ -47,7 +47,9 @@ class ShopAnnotationMarkerView: MKMarkerAnnotationView {
             
             let logoButton = UIButton(frame: CGRect(origin: CGPoint.zero, size: CGSize(width:30, height: 30)))
             //logoButton.setBackgroundImage(shopAnnotation.logo?.myload(), for: UIControlState())
-            
+            logoButton.setBackgroundImage(shopAnnotation.logo?.freniche(completion: { (img: UIImage) in
+                self.image = img
+            }), for: UIControlState())
             rightCalloutAccessoryView = logoButton
             
             //glyphImage = shopAnnotation.logo?.getImage()
