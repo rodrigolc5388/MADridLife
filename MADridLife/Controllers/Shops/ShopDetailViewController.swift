@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import SDWebImage
 
 
 class ShopDetailViewController: UIViewController {
@@ -24,7 +25,8 @@ class ShopDetailViewController: UIViewController {
         super.viewDidLoad()
 
         self.title = shop.name
-        self.shop.image?.loadImage(into: imageView)
+        //self.shop.image?.loadImage(into: imageView)
+        self.imageView.sd_setImage(with: URL(string:shop.image!))
         self.descriptionView.text = shop.description_es
         self.openingHoursLabel.text = shop.openingHours_es
         self.addressLabel.text = shop.address

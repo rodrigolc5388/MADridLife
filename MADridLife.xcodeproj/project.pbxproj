@@ -12,6 +12,9 @@
 		5B1FA9A01F7F1D3A0061383F /* ShopAnnotationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FA99F1F7F1D3A0061383F /* ShopAnnotationClass.swift */; };
 		5B1FA9A21F7FF3720061383F /* ActivityAnnotationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FA9A11F7FF3720061383F /* ActivityAnnotationClass.swift */; };
 		5B1FA9A41F7FF5770061383F /* ActivityMapExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FA9A31F7FF5770061383F /* ActivityMapExtension.swift */; };
+		5B3146AB1F80067000343A61 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5B3146AA1F80067000343A61 /* Podfile */; };
+		5B3146AE1F8012C800343A61 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3146AF1F8012C800343A61 /* SDWebImage.framework */; };
+		5B3146B01F8012CD00343A61 /* libwebp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3146B11F8012CD00343A61 /* libwebp.framework */; };
 		5B33A4811F7BEB7C00F9D518 /* SaveShoptivitiesInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B33A4801F7BEB7C00F9D518 /* SaveShoptivitiesInteractorImpl.swift */; };
 		5B33A4851F7CF30A00F9D518 /* ActivitiesVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B33A4841F7CF30A00F9D518 /* ActivitiesVCExtension.swift */; };
 		5B7D6E091F7A380600AE5B95 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D6E081F7A380600AE5B95 /* CoreDataStack.swift */; };
@@ -43,6 +46,7 @@
 		5BE7AB431F73D2EB0018CF7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7AB421F73D2EB0018CF7D /* Assets.xcassets */; };
 		5BE7AB461F73D2EB0018CF7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7AB441F73D2EB0018CF7D /* LaunchScreen.storyboard */; };
 		5BE7AB511F73D2EB0018CF7D /* MADridLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7AB501F73D2EB0018CF7D /* MADridLifeTests.swift */; };
+		D6F4777835FDFAFE1D8A8CED /* Pods_MADridLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655F25F7D5125D3B7120D1C8 /* Pods_MADridLife.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +60,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4491E6A9A1B6DF23A260A6AD /* Pods-MADridLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MADridLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-MADridLife/Pods-MADridLife.release.xcconfig"; sourceTree = "<group>"; };
 		5B1FA99B1F7EEE530061383F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5B1FA99D1F7EFA2D0061383F /* ShopsMapExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsMapExtension.swift; sourceTree = "<group>"; };
 		5B1FA99F1F7F1D3A0061383F /* ShopAnnotationClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopAnnotationClass.swift; sourceTree = "<group>"; };
 		5B1FA9A11F7FF3720061383F /* ActivityAnnotationClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityAnnotationClass.swift; sourceTree = "<group>"; };
 		5B1FA9A31F7FF5770061383F /* ActivityMapExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityMapExtension.swift; sourceTree = "<group>"; };
+		5B3146AA1F80067000343A61 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5B3146AD1F8011C100343A61 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B3146AF1F8012C800343A61 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B3146B11F8012CD00343A61 /* libwebp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = libwebp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B33A4801F7BEB7C00F9D518 /* SaveShoptivitiesInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveShoptivitiesInteractorImpl.swift; sourceTree = "<group>"; };
 		5B33A4841F7CF30A00F9D518 /* ActivitiesVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesVCExtension.swift; sourceTree = "<group>"; };
 		5B7D6E081F7A380600AE5B95 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -96,6 +105,8 @@
 		5BE7AB4C1F73D2EB0018CF7D /* MADridLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MADridLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE7AB501F73D2EB0018CF7D /* MADridLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MADridLifeTests.swift; sourceTree = "<group>"; };
 		5BE7AB521F73D2EB0018CF7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		655F25F7D5125D3B7120D1C8 /* Pods_MADridLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MADridLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9871C45834036BE8581BF0F /* Pods-MADridLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MADridLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MADridLife/Pods-MADridLife.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +114,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B3146B01F8012CD00343A61 /* libwebp.framework in Frameworks */,
+				5B3146AE1F8012C800343A61 /* SDWebImage.framework in Frameworks */,
 				5B1FA99C1F7EEE530061383F /* MapKit.framework in Frameworks */,
 				5B7D6E0C1F7A3B9700AE5B95 /* CoreData.framework in Frameworks */,
+				D6F4777835FDFAFE1D8A8CED /* Pods_MADridLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +150,8 @@
 				5B8614171F76CCE700C497D2 /* ActivitiesViewController.swift */,
 				5B86141D1F76CDAC00C497D2 /* ActivityDetailViewController.swift */,
 				5B33A4841F7CF30A00F9D518 /* ActivitiesVCExtension.swift */,
-				5B1FA9A11F7FF3720061383F /* ActivityAnnotationClass.swift */,
 				5B1FA9A31F7FF5770061383F /* ActivityMapExtension.swift */,
+				5B1FA9A11F7FF3720061383F /* ActivityAnnotationClass.swift */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
@@ -145,8 +159,12 @@
 		5B7D6E0A1F7A3B9600AE5B95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5B3146B11F8012CD00343A61 /* libwebp.framework */,
+				5B3146AF1F8012C800343A61 /* SDWebImage.framework */,
+				5B3146AD1F8011C100343A61 /* SDWebImage.framework */,
 				5B1FA99B1F7EEE530061383F /* MapKit.framework */,
 				5B7D6E0B1F7A3B9700AE5B95 /* CoreData.framework */,
+				655F25F7D5125D3B7120D1C8 /* Pods_MADridLife.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -212,10 +230,12 @@
 		5BE7AB2F1F73D2EB0018CF7D = {
 			isa = PBXGroup;
 			children = (
+				5B3146AA1F80067000343A61 /* Podfile */,
 				5BE7AB3A1F73D2EB0018CF7D /* MADridLife */,
 				5BE7AB4F1F73D2EB0018CF7D /* MADridLifeTests */,
 				5BE7AB391F73D2EB0018CF7D /* Products */,
 				5B7D6E0A1F7A3B9600AE5B95 /* Frameworks */,
+				628DB0CACB921A0A94F5DF53 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,6 +272,15 @@
 			path = MADridLifeTests;
 			sourceTree = "<group>";
 		};
+		628DB0CACB921A0A94F5DF53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9871C45834036BE8581BF0F /* Pods-MADridLife.debug.xcconfig */,
+				4491E6A9A1B6DF23A260A6AD /* Pods-MADridLife.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -259,9 +288,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BE7AB551F73D2EB0018CF7D /* Build configuration list for PBXNativeTarget "MADridLife" */;
 			buildPhases = (
+				30C575EFF71E269CAC81A7E6 /* [CP] Check Pods Manifest.lock */,
 				5BE7AB341F73D2EB0018CF7D /* Sources */,
 				5BE7AB351F73D2EB0018CF7D /* Frameworks */,
 				5BE7AB361F73D2EB0018CF7D /* Resources */,
+				C0547DE273B16D6D36D6EF63 /* [CP] Embed Pods Frameworks */,
+				65B89F4084B1DA0077FF3016 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -342,6 +374,7 @@
 			files = (
 				5BE7AB461F73D2EB0018CF7D /* LaunchScreen.storyboard in Resources */,
 				5BE7AB431F73D2EB0018CF7D /* Assets.xcassets in Resources */,
+				5B3146AB1F80067000343A61 /* Podfile in Resources */,
 				5BE7AB411F73D2EB0018CF7D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +387,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30C575EFF71E269CAC81A7E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MADridLife-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65B89F4084B1DA0077FF3016 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MADridLife/Pods-MADridLife-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0547DE273B16D6D36D6EF63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MADridLife/Pods-MADridLife-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MADridLife/Pods-MADridLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5BE7AB341F73D2EB0018CF7D /* Sources */ = {
@@ -540,6 +629,7 @@
 		};
 		5BE7AB561F73D2EB0018CF7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9871C45834036BE8581BF0F /* Pods-MADridLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -555,6 +645,7 @@
 		};
 		5BE7AB571F73D2EB0018CF7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4491E6A9A1B6DF23A260A6AD /* Pods-MADridLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

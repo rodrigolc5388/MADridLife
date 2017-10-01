@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ShopCell: UICollectionViewCell {
     
@@ -17,11 +18,8 @@ class ShopCell: UICollectionViewCell {
     
     func refresh(shop: Shoptivity){
         self.shop = shop
-        
         self.label.text = shop.name
-        self.shop?.logo.loadImage(into: imageView)
-        UIView.animate(withDuration: 1.0) {
-            self.imageView.layer.cornerRadius = 30
-        }
+        self.imageView.sd_setImage(with: URL(string: shop.logo))
+        //self.shop?.logo.loadImage(into: imageView)
     }
 }

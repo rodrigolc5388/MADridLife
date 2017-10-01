@@ -20,9 +20,7 @@ class ActivityCell: UICollectionViewCell {
         
         self.label.text = activity.name
         self.activity?.logo.loadImage(into: imageView)
-        UIView.animate(withDuration: 1.0) {
-            self.imageView.layer.cornerRadius = 30
-        }
+        //self.imageView.sd_setImage(with: URL(string: activity.logo))
     }
     
 }

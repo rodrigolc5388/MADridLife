@@ -1,0 +1,6 @@
+framework module Pods_MADridLife {
+  umbrella header "Pods-MADridLife-umbrella.h"
+
+  export *
+  module * { export * }
+}

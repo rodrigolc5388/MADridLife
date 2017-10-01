@@ -24,6 +24,23 @@ extension String {
     }
     
     
+    func myload() -> UIImage {
+        var logo: UIImageView?
+        let queue = OperationQueue()
+        queue.addOperation {
+            if let url = URL(string: self),
+                let data = NSData(contentsOf: url),
+                let image = UIImage(data: data as Data){
+                
+                OperationQueue.main.addOperation {
+                    logo?.image = image
+                    
+                }
+            }
+        }
+        return (logo?.image)!
+    }
+    
     func getImage() -> UIImage? {
         if let url = URL(string: self), let data = NSData(contentsOf: url), let image = UIImage(data: data as Data) {
             return image
@@ -31,5 +48,6 @@ extension String {
             return nil
         }
     }
+    
     
 }

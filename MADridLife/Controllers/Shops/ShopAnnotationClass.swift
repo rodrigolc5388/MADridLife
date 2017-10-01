@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import SDWebImage
 
 class ShopAnnotation: NSObject, MKAnnotation {
     let title: String?
@@ -45,7 +46,8 @@ class ShopAnnotationMarkerView: MKMarkerAnnotationView {
             calloutOffset = CGPoint(x: -5, y: 5)
             
             let logoButton = UIButton(frame: CGRect(origin: CGPoint.zero, size: CGSize(width:30, height: 30)))
-            logoButton.setBackgroundImage(shopAnnotation.logo?.getImage(), for: UIControlState())
+            //logoButton.setBackgroundImage(shopAnnotation.logo?.myload(), for: UIControlState())
+            
             rightCalloutAccessoryView = logoButton
             
             //glyphImage = shopAnnotation.logo?.getImage()
