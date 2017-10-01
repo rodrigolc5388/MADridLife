@@ -24,24 +24,7 @@ extension String {
     }
     
     
-    func myload() -> UIImage {
-        var logo: UIImageView?
-        let queue = OperationQueue()
-        queue.addOperation {
-            if let url = URL(string: self),
-                let data = NSData(contentsOf: url),
-                let image = UIImage(data: data as Data){
-                
-                OperationQueue.main.addOperation {
-                    logo?.image = image
-                    
-                }
-            }
-        }
-        return (logo?.image)!
-    }
-    
-    func freniche(completion: @escaping (_ img: UIImage) -> Void){
+    func myLoad(completion: @escaping (_ img: UIImage) -> Void){
         let queue = OperationQueue()
         queue.addOperation {
             if let url = URL(string: self),

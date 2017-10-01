@@ -45,7 +45,9 @@ class ActivityAnnotationMarkerView: MKMarkerAnnotationView {
             calloutOffset = CGPoint(x: -5, y: 5)
             
             let logoButton = UIButton(frame: CGRect(origin: CGPoint.zero, size: CGSize(width:30, height: 30)))
-            //logoButton.setBackgroundImage(activityAnnotation.logo?.getImage(), for: UIControlState())
+            activityAnnotation.logo?.myLoad(completion: { (img: UIImage) in
+                logoButton.setBackgroundImage(img, for: UIControlState())
+            })
             rightCalloutAccessoryView = logoButton
             
             //glyphImage = shopAnnotation.logo?.getImage()

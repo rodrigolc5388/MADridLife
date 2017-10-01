@@ -20,6 +20,5 @@ class ShopCell: UICollectionViewCell {
         self.shop = shop
         self.label.text = shop.name
         self.imageView.sd_setImage(with: URL(string: shop.logo))
-        //self.shop?.logo.loadImage(into: imageView)
     }
 }

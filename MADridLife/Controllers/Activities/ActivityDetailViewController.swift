@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import SDWebImage
 
 
 class ActivityDetailViewController: UIViewController {
@@ -25,6 +26,7 @@ class ActivityDetailViewController: UIViewController {
 
         self.title = activity.name
         self.activity.image?.loadImage(into: imageView)
+        self.imageView.sd_setImage(with: URL(string:activity.image!))
         self.descriptionView.text = activity.description_es
         self.openingHoursLabel.text = activity.openingHours_es
         self.addressLabel.text = activity.address

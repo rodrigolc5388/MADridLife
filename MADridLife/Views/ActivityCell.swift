@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ActivityCell: UICollectionViewCell {
  
@@ -17,10 +18,8 @@ class ActivityCell: UICollectionViewCell {
     
     func refresh(activity: Shoptivity){
         self.activity = activity
-        
         self.label.text = activity.name
-        self.activity?.logo.loadImage(into: imageView)
-        //self.imageView.sd_setImage(with: URL(string: activity.logo))
+        self.imageView.sd_setImage(with: URL(string: activity.logo))
     }
     
 }
