@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+//import Reachability
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var cds = CoreDataStack()
     var context: NSManagedObjectContext?
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -26,15 +29,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-
+    
 
     func applicationDidEnterBackground(_ application: UIApplication) {
         guard let context = self.context else { return }
         self.cds.saveContext(context: context)
     }
-
     
-
+    
+    
 
 }
 
