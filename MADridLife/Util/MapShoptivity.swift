@@ -16,6 +16,8 @@ func mapShoptivityIntoShoptivityCD(context: NSManagedObjectContext, shoptivity: 
     shoptivityCD.address = shoptivity.address
     shoptivityCD.description_en = shoptivity.description_en
     shoptivityCD.description_es = shoptivity.description_es
+    shoptivityCD.openingHours_es = shoptivity.openingHours_es
+    shoptivityCD.openingHours_en = shoptivity.openingHours_en
     shoptivityCD.logo = shoptivity.logo
     shoptivityCD.image = shoptivity.image
     shoptivityCD.latitude = shoptivity.latitude ?? 0
@@ -32,6 +34,8 @@ func mapShoptivityCDIntoShoptivity(shoptivityCD: ShoptivityCD) -> Shoptivity{
     shoptivity.address = shoptivityCD.address ?? ""
     shoptivity.description_en = shoptivityCD.description_en ?? ""
     shoptivity.description_es = shoptivityCD.description_es ?? ""
+    shoptivity.openingHours_es = shoptivityCD.openingHours_es ?? ""
+    shoptivity.openingHours_en = shoptivityCD.openingHours_en ?? ""
     shoptivity.logo = shoptivityCD.logo ?? ""
     shoptivity.image = shoptivityCD.image ?? ""
     shoptivity.latitude = shoptivityCD.latitude
