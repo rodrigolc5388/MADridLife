@@ -12,7 +12,6 @@ import CoreData
 class MainViewController: UIViewController {
 
     var context: NSManagedObjectContext!
-    var reachability: Reachability!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -27,17 +26,6 @@ class MainViewController: UIViewController {
             initializeData()
         }
 
-    }
-    
-    func initialFunc() {
-        ExecuteOnceInteractorImpl().execute {
-            if (reachability.whenUnreachable != nil) {
-                noConnectionAlert()
-                print("Aquí voy a meter la notificación de que no hay conexión")
-            } else {
-                initializeData()
-            }
-        }
     }
     
     

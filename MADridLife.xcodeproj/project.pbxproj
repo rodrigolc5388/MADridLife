@@ -17,7 +17,6 @@
 		5B3146B01F8012CD00343A61 /* libwebp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3146B11F8012CD00343A61 /* libwebp.framework */; };
 		5B33A4811F7BEB7C00F9D518 /* SaveShoptivitiesInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B33A4801F7BEB7C00F9D518 /* SaveShoptivitiesInteractorImpl.swift */; };
 		5B33A4851F7CF30A00F9D518 /* ActivitiesVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B33A4841F7CF30A00F9D518 /* ActivitiesVCExtension.swift */; };
-		5B78F7421F84AFCD00108D71 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78F7411F84AFCD00108D71 /* Reachability.swift */; };
 		5B7D6E091F7A380600AE5B95 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D6E081F7A380600AE5B95 /* CoreDataStack.swift */; };
 		5B7D6E0C1F7A3B9700AE5B95 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7D6E0B1F7A3B9700AE5B95 /* CoreData.framework */; };
 		5B7D6E121F7A466B00AE5B95 /* MADridLife.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D6E101F7A466B00AE5B95 /* MADridLife.xcdatamodeld */; };
@@ -73,7 +72,6 @@
 		5B3146B11F8012CD00343A61 /* libwebp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = libwebp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B33A4801F7BEB7C00F9D518 /* SaveShoptivitiesInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveShoptivitiesInteractorImpl.swift; sourceTree = "<group>"; };
 		5B33A4841F7CF30A00F9D518 /* ActivitiesVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesVCExtension.swift; sourceTree = "<group>"; };
-		5B78F7411F84AFCD00108D71 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		5B7D6E081F7A380600AE5B95 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		5B7D6E0B1F7A3B9700AE5B95 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		5B7D6E111F7A466B00AE5B95 /* MADridLife.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MADridLife.xcdatamodel; sourceTree = "<group>"; };
@@ -225,7 +223,6 @@
 				5B967CD71F76F1E1005FE0A2 /* String+Image.swift */,
 				5B7D6E081F7A380600AE5B95 /* CoreDataStack.swift */,
 				5B7D6E171F7A4B1F00AE5B95 /* MapShoptivity.swift */,
-				5B78F7411F84AFCD00108D71 /* Reachability.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -460,7 +457,6 @@
 				5B1FA9A41F7FF5770061383F /* ActivityMapExtension.swift in Sources */,
 				5B967CD81F76F1E1005FE0A2 /* String+Image.swift in Sources */,
 				5B1FA9A01F7F1D3A0061383F /* ShopAnnotationClass.swift in Sources */,
-				5B78F7421F84AFCD00108D71 /* Reachability.swift in Sources */,
 				5B33A4851F7CF30A00F9D518 /* ActivitiesVCExtension.swift in Sources */,
 				5B86141A1F76CD2B00C497D2 /* ShopDetailViewController.swift in Sources */,
 				5B8614031F75140B00C497D2 /* Shoptivities.swift in Sources */,
