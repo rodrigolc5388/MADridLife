@@ -17,13 +17,6 @@ class MainViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
-        /*NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged), name: .reachabilityChanged, object: reachability)
-        do{
-            try reachability.startNotifier()
-        }catch{
-            print("could not start reachability notifier")
-        }*/
-        
     }
     
     
@@ -34,6 +27,17 @@ class MainViewController: UIViewController {
             initializeData()
         }
 
+    }
+    
+    func initialFunc() {
+        ExecuteOnceInteractorImpl().execute {
+            if (reachability.whenUnreachable != nil) {
+                noConnectionAlert()
+                print("Aquí voy a meter la notificación de que no hay conexión")
+            } else {
+                initializeData()
+            }
+        }
     }
     
     
@@ -49,6 +53,13 @@ class MainViewController: UIViewController {
             
         }
     }
+    
+    func noConnectionAlert() {
+        let alert = UIAlertController(title: "There is no internet connection",
+                                      message: "Please, close the app, solve the issue and try again.",
+                                      preferredStyle: .alert)
+        present(alert, animated: true, completion: nil)
+    }
 
     
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -60,21 +71,6 @@ class MainViewController: UIViewController {
         if segue.identifier == "ShowActivitiesSegue"{
             let avc = segue.destination as! ActivitiesViewController
             avc.context = self.context
-        }
-    }
-    
-    
-    @objc func reachabilityChanged(note: Notification) {
-        
-        let reachability = note.object as! Reachability
-        
-        switch reachability.connection {
-        case .wifi:
-            print("Reachable via WiFi")
-        case .cellular:
-            print("Reachable via Cellular")
-        case .none:
-            print("Network not reachable")
         }
     }
 }
