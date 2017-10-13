@@ -28,6 +28,16 @@ class MainViewController: UIViewController {
 
     }
     
+    func launchApp() {
+        if reachability() {
+            ExecuteOnceInteractorImpl().execute {
+                initializeData()
+            }
+        } else {
+            notConnectedAlert()
+        }
+    }
+    
     
     func initializeData(){
         let downloadShoptivitiesInteractor: DownloadShoptivitiesInteractor = DonwloadShoptivitiesInteractorImpl()
@@ -41,12 +51,14 @@ class MainViewController: UIViewController {
             
         }
     }
+
     
-    func noConnectionAlert() {
+    func notConnectedAlert() {
         let alert = UIAlertController(title: "There is no internet connection",
                                       message: "Please, close the app, solve the issue and try again.",
                                       preferredStyle: .alert)
-        present(alert, animated: true, completion: nil)
+        alert.addAction(UIAlertAction(title: "Understood", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 
     
