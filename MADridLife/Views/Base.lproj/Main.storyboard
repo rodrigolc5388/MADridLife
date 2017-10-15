@@ -258,10 +258,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="369" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rx5-ET-u6I">
-                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="55"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBM-da-jEb">
                                                     <rect key="frame" x="83" y="0.0" width="286" height="55"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -269,6 +265,10 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rx5-ET-u6I">
+                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="55"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </view>
                                         <connections>
@@ -287,7 +287,7 @@
                             <constraint firstItem="IfD-Pp-kWn" firstAttribute="top" secondItem="qaI-k6-Oyg" secondAttribute="top" id="qWn-WO-mzf"/>
                             <constraint firstAttribute="trailing" secondItem="ae6-Vh-lrb" secondAttribute="trailing" constant="8" id="rMw-15-ySd"/>
                             <constraint firstItem="IfD-Pp-kWn" firstAttribute="leading" secondItem="qaI-k6-Oyg" secondAttribute="leading" constant="8" id="w7e-cE-WSz"/>
-                            <constraint firstItem="ae6-Vh-lrb" firstAttribute="leading" secondItem="qaI-k6-Oyg" secondAttribute="leading" constant="8" id="xqo-KE-bnu"/>
+                            <constraint firstItem="ae6-Vh-lrb" firstAttribute="leading" secondItem="Uyr-9b-tPE" secondAttribute="leading" constant="8" id="xqo-KE-bnu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qaI-k6-Oyg"/>
                     </view>
