@@ -39,6 +39,11 @@
                                     <segue destination="OZy-Dq-nFF" kind="show" identifier="ShowActivitiesSegue" id="2S2-xW-AaF"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5f7-Rg-8B2">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -55,6 +60,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="MADridLife" id="uzq-LB-Cg9"/>
+                    <connections>
+                        <outlet property="activitiesButton" destination="RQH-lo-xg7" id="KhE-Qb-IhF"/>
+                        <outlet property="activityIndicator" destination="5f7-Rg-8B2" id="LW6-Kw-tlF"/>
+                        <outlet property="shopsButton" destination="XeB-sC-bPp" id="CQa-0K-xzf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

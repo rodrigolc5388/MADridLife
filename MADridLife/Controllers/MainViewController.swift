@@ -12,6 +12,9 @@ import CoreData
 class MainViewController: UIViewController {
 
     var context: NSManagedObjectContext!
+    @IBOutlet weak var shopsButton: UIButton!
+    @IBOutlet weak var activitiesButton: UIButton!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -22,18 +25,20 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ExecuteOnceInteractorImpl().execute{
+        /*ExecuteOnceInteractorImpl().execute{
             initializeData()
-        }
-
+        }*/
+        launchApp()
     }
     
     func launchApp() {
         if reachability() {
             ExecuteOnceInteractorImpl().execute {
+                cachingDataUI()
                 initializeData()
             }
         } else {
+            cachingDataUI()
             notConnectedAlert()
         }
     }
@@ -47,13 +52,23 @@ class MainViewController: UIViewController {
             let cacheInteractor = SaveShoptivitiesInteractorImpl()
             cacheInteractor.execute(shops: shops, activities: activities, context: self.context, onSuccess: { (shops: Shoptivities, activities: Shoptivities) in
                 SetExecutedOnceInteractorImpl().execute()
+                self.dataReadyUI()
             })
             
         }
     }
     
     func cachingDataUI() {
-        
+        self.shopsButton.isHidden = true
+        self.activitiesButton.isHidden = true
+        self.activityIndicator.startAnimating()
+    }
+    
+    func dataReadyUI(){
+        self.shopsButton.isHidden = false
+        self.activitiesButton.isHidden = false
+        self.activityIndicator.stopAnimating()
+        //self.activityIndicator.isHidden = true
     }
 
     
