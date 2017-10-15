@@ -51,6 +51,10 @@ class MainViewController: UIViewController {
             
         }
     }
+    
+    func cachingDataUI() {
+        
+    }
 
     
     func notConnectedAlert() {
