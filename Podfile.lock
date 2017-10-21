@@ -1,4 +1,5 @@
 PODS:
+  - ALLoadingView (1.1.4)
   - libwebp (0.6.0):
     - libwebp/core (= 0.6.0)
     - libwebp/dec (= 0.6.0)
@@ -29,12 +30,14 @@ PODS:
     - SDWebImage/Core
 
 DEPENDENCIES:
+  - ALLoadingView
   - SDWebImage/WebP
 
 SPEC CHECKSUMS:
+  ALLoadingView: 86aea5ee564f034296e76a49f53779e0a85fe846
   libwebp: 1d5a07c2eb97f9c31bd5f154bb82efc0ea67c6a2
   SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
 
-PODFILE CHECKSUM: 0ed2ecd768484749e93ef25e29670057df5b1438
+PODFILE CHECKSUM: 6c54e1bb0e4d1b6daea98ca32d696e43957709b6
 
 COCOAPODS: 1.3.1

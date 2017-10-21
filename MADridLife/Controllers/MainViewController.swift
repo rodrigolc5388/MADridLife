@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import ALLoadingView
+
 
 class MainViewController: UIViewController {
 
@@ -32,13 +34,14 @@ class MainViewController: UIViewController {
     func launchApp(){
         ExecuteOnceInteractorImpl().execute(closure: {
             if reachability() == true {
-                self.activityIndicator.isHidden = false
-                self.activityIndicator.startAnimating()
+                ALLoadingView.manager.showLoadingView(ofType: .messageWithIndicator, windowMode: .fullscreen)
+                //self.activityIndicator.isHidden = false
+                //self.activityIndicator.startAnimating()
                 self.shopsButton.isHidden = true
                 self.activitiesButton.isHidden = true
                 self.initializeData()
             } else {
-                self.activityIndicator.isHidden = true
+                //self.activityIndicator.isHidden = true
                 self.shopsButton.isHidden = true
                 self.activitiesButton.isHidden = true
                 self.notConnectedAlert()
@@ -55,10 +58,11 @@ class MainViewController: UIViewController {
             let cacheInteractor = SaveShoptivitiesInteractorImpl()
             cacheInteractor.execute(shops: shops, activities: activities, context: self.context, onSuccess: { (shops: Shoptivities, activities: Shoptivities) in
                 SetExecutedOnceInteractorImpl().execute()
-                self.activityIndicator.isHidden = true
-                self.activityIndicator.stopAnimating()
+                //self.activityIndicator.isHidden = true
+               // self.activityIndicator.stopAnimating()
                 self.shopsButton.isHidden = false
                 self.activitiesButton.isHidden = false
+                ALLoadingView.manager.hideLoadingView(withDelay: 3.0)
             })
             
         }
