@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,51 +18,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeB-sC-bPp">
-                                <rect key="frame" x="80" y="146" width="215" height="100"/>
-                                <color key="backgroundColor" red="0.71369010262815347" green="1" blue="0.88236067549066288" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Shops"/>
-                                <connections>
-                                    <segue destination="vIH-OJ-FYS" kind="show" identifier="ShowShopsSegue" id="VeK-0c-gfR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQH-lo-xg7">
-                                <rect key="frame" x="80" y="467" width="215" height="100"/>
-                                <color key="backgroundColor" red="0.71369010262815347" green="1" blue="0.88236067549066288" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQH-lo-xg7">
+                                <rect key="frame" x="59" y="391" width="256" height="256"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="RQH-lo-xg7" secondAttribute="height" multiplier="2:1" id="nUX-Bb-Vca"/>
+                                    <constraint firstAttribute="width" secondItem="RQH-lo-xg7" secondAttribute="height" multiplier="1:1" id="JIf-4q-Xcc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Activities"/>
+                                <state key="normal" title="Activities" image="activites_logo.png"/>
                                 <connections>
                                     <segue destination="OZy-Dq-nFF" kind="show" identifier="ShowActivitiesSegue" id="2S2-xW-AaF"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5f7-Rg-8B2">
-                                <rect key="frame" x="169" y="315" width="37" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeB-sC-bPp">
+                                <rect key="frame" x="59" y="84" width="256" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XeB-sC-bPp" secondAttribute="height" multiplier="1:1" id="0m1-mW-kaS"/>
+                                </constraints>
+                                <state key="normal" title="Shops" image="shops_logo.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vIH-OJ-FYS" kind="show" identifier="ShowShopsSegue" id="VeK-0c-gfR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="RQH-lo-xg7" firstAttribute="width" secondItem="XeB-sC-bPp" secondAttribute="height" multiplier="43:20" id="6Io-jz-oCa"/>
-                            <constraint firstItem="XeB-sC-bPp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="82" id="6ax-DP-rcJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RQH-lo-xg7" secondAttribute="bottom" constant="100" id="EMX-nK-jJ5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XeB-sC-bPp" secondAttribute="trailing" constant="80" id="PH4-pF-Ky3"/>
-                            <constraint firstItem="RQH-lo-xg7" firstAttribute="width" secondItem="XeB-sC-bPp" secondAttribute="width" id="T6i-sL-uWd"/>
-                            <constraint firstItem="XeB-sC-bPp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="T9q-TL-wLC"/>
-                            <constraint firstItem="RQH-lo-xg7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="brs-Yy-Dh6"/>
-                            <constraint firstItem="RQH-lo-xg7" firstAttribute="height" secondItem="XeB-sC-bPp" secondAttribute="height" id="c1B-HF-Wck"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RQH-lo-xg7" secondAttribute="trailing" constant="80" id="vdP-8B-UHR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XeB-sC-bPp" secondAttribute="trailing" constant="60" id="7QF-YV-MxO"/>
+                            <constraint firstItem="XeB-sC-bPp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="Nkw-aK-yb6"/>
+                            <constraint firstItem="XeB-sC-bPp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Sdy-KS-6DK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RQH-lo-xg7" secondAttribute="bottom" constant="20" id="Yd7-D1-Sdu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RQH-lo-xg7" secondAttribute="trailing" constant="60" id="b5g-Z9-8QF"/>
+                            <constraint firstItem="RQH-lo-xg7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="kRr-xI-SHx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="MADridLife" id="uzq-LB-Cg9"/>
                     <connections>
                         <outlet property="activitiesButton" destination="RQH-lo-xg7" id="KhE-Qb-IhF"/>
-                        <outlet property="activityIndicator" destination="5f7-Rg-8B2" id="LW6-Kw-tlF"/>
                         <outlet property="shopsButton" destination="XeB-sC-bPp" id="CQa-0K-xzf"/>
                     </connections>
                 </viewController>
@@ -428,4 +420,8 @@
             <point key="canvasLocation" x="-234" y="133"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="activites_logo.png" width="1024" height="1024"/>
+        <image name="shops_logo.png" width="1024" height="1024"/>
+    </resources>
 </document>

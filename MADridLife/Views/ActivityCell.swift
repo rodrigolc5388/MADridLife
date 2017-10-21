@@ -21,5 +21,4 @@ class ActivityCell: UICollectionViewCell {
         self.label.text = activity.name
         self.imageView.sd_setImage(with: URL(string: activity.logo))
     }
-    
 }
