@@ -25,22 +25,25 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /*ExecuteOnceInteractorImpl().execute{
-            initializeData()
-        }*/
-        launchApp()
+        self.activityIndicator.isHidden = true
+        self.launchApp()
     }
     
-    func launchApp() {
-        if reachability() {
-            ExecuteOnceInteractorImpl().execute {
-                cachingDataUI()
-                initializeData()
+    func launchApp(){
+        ExecuteOnceInteractorImpl().execute(closure: {
+            if reachability() == true {
+                self.activityIndicator.isHidden = false
+                self.activityIndicator.startAnimating()
+                self.shopsButton.isHidden = true
+                self.activitiesButton.isHidden = true
+                self.initializeData()
+            } else {
+                self.activityIndicator.isHidden = true
+                self.shopsButton.isHidden = true
+                self.activitiesButton.isHidden = true
+                self.notConnectedAlert()
             }
-        } else {
-            cachingDataUI()
-            notConnectedAlert()
-        }
+        })
     }
     
     
@@ -52,25 +55,15 @@ class MainViewController: UIViewController {
             let cacheInteractor = SaveShoptivitiesInteractorImpl()
             cacheInteractor.execute(shops: shops, activities: activities, context: self.context, onSuccess: { (shops: Shoptivities, activities: Shoptivities) in
                 SetExecutedOnceInteractorImpl().execute()
-                self.dataReadyUI()
+                self.activityIndicator.isHidden = true
+                self.activityIndicator.stopAnimating()
+                self.shopsButton.isHidden = false
+                self.activitiesButton.isHidden = false
             })
             
         }
     }
-    
-    func cachingDataUI() {
-        self.shopsButton.isHidden = true
-        self.activitiesButton.isHidden = true
-        self.activityIndicator.startAnimating()
-    }
-    
-    func dataReadyUI(){
-        self.shopsButton.isHidden = false
-        self.activitiesButton.isHidden = false
-        self.activityIndicator.stopAnimating()
-        //self.activityIndicator.isHidden = true
-    }
-
+ 
     
     func notConnectedAlert() {
         let alert = UIAlertController(title: "There is no internet connection",
