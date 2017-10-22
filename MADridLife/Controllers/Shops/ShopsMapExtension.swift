@@ -14,7 +14,7 @@ extension ShopsViewController: CLLocationManagerDelegate, MKMapViewDelegate{
     
     func mapInitial(){
         let initialLocation = CLLocation(latitude: 40.437920, longitude: -3.691040)
-        let regionRadius: CLLocationDistance = 5000
+        let regionRadius: CLLocationDistance = 7500
         let region = MKCoordinateRegionMakeWithDistance(initialLocation.coordinate, regionRadius, regionRadius)
         self.mapView.setRegion(region, animated: true)
     }

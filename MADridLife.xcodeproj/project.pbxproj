@@ -13,6 +13,8 @@
 		5B1FA9A01F7F1D3A0061383F /* ShopAnnotationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FA99F1F7F1D3A0061383F /* ShopAnnotationClass.swift */; };
 		5B1FA9A21F7FF3720061383F /* ActivityAnnotationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FA9A11F7FF3720061383F /* ActivityAnnotationClass.swift */; };
 		5B1FA9A41F7FF5770061383F /* ActivityMapExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FA9A31F7FF5770061383F /* ActivityMapExtension.swift */; };
+		5B2BAE8B1F9C0A3400AEE414 /* shops_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B2BAE891F9C0A3300AEE414 /* shops_logo.png */; };
+		5B2BAE8C1F9C0A3400AEE414 /* activites_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B2BAE8A1F9C0A3300AEE414 /* activites_logo.png */; };
 		5B3146AB1F80067000343A61 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5B3146AA1F80067000343A61 /* Podfile */; };
 		5B3146AE1F8012C800343A61 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3146AF1F8012C800343A61 /* SDWebImage.framework */; };
 		5B3146B01F8012CD00343A61 /* libwebp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3146B11F8012CD00343A61 /* libwebp.framework */; };
@@ -42,6 +44,7 @@
 		5B967CD31F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B967CD21F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift */; };
 		5B967CD61F76E2E9005FE0A2 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B967CD51F76E2E9005FE0A2 /* JSONParser.swift */; };
 		5B967CD81F76F1E1005FE0A2 /* String+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B967CD71F76F1E1005FE0A2 /* String+Image.swift */; };
+		5BCF7D881F9BA3D500ED0185 /* ALLoadingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BCF7D891F9BA3D500ED0185 /* ALLoadingView.framework */; };
 		5BE7AB3C1F73D2EB0018CF7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7AB3B1F73D2EB0018CF7D /* AppDelegate.swift */; };
 		5BE7AB411F73D2EB0018CF7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7AB3F1F73D2EB0018CF7D /* Main.storyboard */; };
 		5BE7AB431F73D2EB0018CF7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7AB421F73D2EB0018CF7D /* Assets.xcassets */; };
@@ -68,6 +71,8 @@
 		5B1FA99F1F7F1D3A0061383F /* ShopAnnotationClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopAnnotationClass.swift; sourceTree = "<group>"; };
 		5B1FA9A11F7FF3720061383F /* ActivityAnnotationClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityAnnotationClass.swift; sourceTree = "<group>"; };
 		5B1FA9A31F7FF5770061383F /* ActivityMapExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityMapExtension.swift; sourceTree = "<group>"; };
+		5B2BAE891F9C0A3300AEE414 /* shops_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shops_logo.png; sourceTree = "<group>"; };
+		5B2BAE8A1F9C0A3300AEE414 /* activites_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activites_logo.png; sourceTree = "<group>"; };
 		5B3146AA1F80067000343A61 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5B3146AD1F8011C100343A61 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B3146AF1F8012C800343A61 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +103,7 @@
 		5B967CD21F76E089005FE0A2 /* DonwloadShoptivitiesInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonwloadShoptivitiesInteractorImpl.swift; sourceTree = "<group>"; };
 		5B967CD51F76E2E9005FE0A2 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		5B967CD71F76F1E1005FE0A2 /* String+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Image.swift"; sourceTree = "<group>"; };
+		5BCF7D891F9BA3D500ED0185 /* ALLoadingView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ALLoadingView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE7AB381F73D2EB0018CF7D /* MADridLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MADridLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE7AB3B1F73D2EB0018CF7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BE7AB401F73D2EB0018CF7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BCF7D881F9BA3D500ED0185 /* ALLoadingView.framework in Frameworks */,
 				5B3146B01F8012CD00343A61 /* libwebp.framework in Frameworks */,
 				5B3146AE1F8012C800343A61 /* SDWebImage.framework in Frameworks */,
 				5B1FA99C1F7EEE530061383F /* MapKit.framework in Frameworks */,
@@ -161,6 +168,7 @@
 		5B7D6E0A1F7A3B9600AE5B95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5BCF7D891F9BA3D500ED0185 /* ALLoadingView.framework */,
 				5B3146B11F8012CD00343A61 /* libwebp.framework */,
 				5B3146AF1F8012C800343A61 /* SDWebImage.framework */,
 				5B3146AD1F8011C100343A61 /* SDWebImage.framework */,
@@ -178,6 +186,8 @@
 				5BE7AB3F1F73D2EB0018CF7D /* Main.storyboard */,
 				5B967CCE1F76D69D005FE0A2 /* ShopCell.swift */,
 				5B967CD01F76D8F1005FE0A2 /* ActivityCell.swift */,
+				5B2BAE8A1F9C0A3300AEE414 /* activites_logo.png */,
+				5B2BAE891F9C0A3300AEE414 /* shops_logo.png */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -378,6 +388,8 @@
 				5BE7AB461F73D2EB0018CF7D /* LaunchScreen.storyboard in Resources */,
 				5BE7AB431F73D2EB0018CF7D /* Assets.xcassets in Resources */,
 				5B3146AB1F80067000343A61 /* Podfile in Resources */,
+				5B2BAE8C1F9C0A3400AEE414 /* activites_logo.png in Resources */,
+				5B2BAE8B1F9C0A3400AEE414 /* shops_logo.png in Resources */,
 				5BE7AB411F73D2EB0018CF7D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,11 +444,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MADridLife/Pods-MADridLife-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ALLoadingView/ALLoadingView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ALLoadingView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
 			);

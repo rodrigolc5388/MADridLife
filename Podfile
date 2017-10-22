@@ -3,4 +3,5 @@ use_frameworks!
 
 target 'MADridLife' do
     pod 'SDWebImage/WebP'
+    pod 'ALLoadingView'
 end

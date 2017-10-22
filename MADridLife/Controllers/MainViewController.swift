@@ -8,13 +8,14 @@
 
 import UIKit
 import CoreData
+import ALLoadingView
+
 
 class MainViewController: UIViewController {
 
     var context: NSManagedObjectContext!
     @IBOutlet weak var shopsButton: UIButton!
     @IBOutlet weak var activitiesButton: UIButton!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -25,20 +26,22 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.activityIndicator.isHidden = true
-        self.launchApp()
+        //self.activityIndicator.isHidden = true
+        //self.launchApp()
+        
+        ExecuteOnceInteractorImpl().execute {
+            initializeData()
+        }
     }
     
     func launchApp(){
         ExecuteOnceInteractorImpl().execute(closure: {
             if reachability() == true {
-                self.activityIndicator.isHidden = false
-                self.activityIndicator.startAnimating()
+                ALLoadingView.manager.showLoadingView(ofType: .messageWithIndicator, windowMode: .fullscreen)
                 self.shopsButton.isHidden = true
                 self.activitiesButton.isHidden = true
                 self.initializeData()
             } else {
-                self.activityIndicator.isHidden = true
                 self.shopsButton.isHidden = true
                 self.activitiesButton.isHidden = true
                 self.notConnectedAlert()
@@ -55,10 +58,9 @@ class MainViewController: UIViewController {
             let cacheInteractor = SaveShoptivitiesInteractorImpl()
             cacheInteractor.execute(shops: shops, activities: activities, context: self.context, onSuccess: { (shops: Shoptivities, activities: Shoptivities) in
                 SetExecutedOnceInteractorImpl().execute()
-                self.activityIndicator.isHidden = true
-                self.activityIndicator.stopAnimating()
                 self.shopsButton.isHidden = false
                 self.activitiesButton.isHidden = false
+                ALLoadingView.manager.hideLoadingView(withDelay: 3.0)
             })
             
         }
