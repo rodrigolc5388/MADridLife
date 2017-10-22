@@ -25,13 +25,11 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.launchApp()
         
-        //self.activityIndicator.isHidden = true
-        //self.launchApp()
-        
-        ExecuteOnceInteractorImpl().execute {
+        /*ExecuteOnceInteractorImpl().execute {
             initializeData()
-        }
+        }*/
     }
     
     func launchApp(){
