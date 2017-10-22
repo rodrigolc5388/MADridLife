@@ -26,11 +26,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.launchApp()
-        
-        /*ExecuteOnceInteractorImpl().execute {
-            initializeData()
-        }*/
     }
+    
     
     func launchApp(){
         ExecuteOnceInteractorImpl().execute(closure: {
